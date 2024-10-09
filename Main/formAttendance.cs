@@ -232,7 +232,7 @@ namespace Main
         {
             if (!isNameFormOpen)
             {
-                isNameFormOpen = true; 
+                isNameFormOpen = true;
 
                 formLogged loggedForm = new formLogged(studentName);
                 loggedForm.RefreshAttendanceRecord();
@@ -241,13 +241,13 @@ namespace Main
                 loggedForm.Show();
 
                 Timer timer = new Timer();
-                timer.Interval = 3000; 
+                timer.Interval = 3000;
                 timer.Tick += (s, args) =>
                 {
                     timer.Stop();
                     loggedForm.Close();
                     this.Activate();
-                    isNameFormOpen = false; 
+                    isNameFormOpen = false;
                 };
                 timer.Start();
             }
