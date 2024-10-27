@@ -18,6 +18,7 @@ namespace Main
         formRecords records;
         formToday today;
         formAttendance log;
+        formSettings settings;
 
         public Main()
         {
@@ -37,7 +38,6 @@ namespace Main
             Controls.OfType<MdiClient>().FirstOrDefault().BackColor = Color.FromArgb(232, 234, 237);
         }
 
-
         private void ResetButtonColors()
         {
             btnHome.BackColor = ColorTranslator.FromHtml("#2A2A2A");
@@ -46,6 +46,7 @@ namespace Main
             btnRecord.BackColor = ColorTranslator.FromHtml("#2A2A2A");
             btnToday.BackColor = ColorTranslator.FromHtml("#2A2A2A");
             btnLog.BackColor = ColorTranslator.FromHtml("#2A2A2A");
+            btnSettings.BackColor = ColorTranslator.FromHtml("#2A2A2A");
         }
 
         bool sidebarExpand = true;
@@ -53,7 +54,7 @@ namespace Main
         {
             if (sidebarExpand)
             {
-                sidebar.Width -= 10;
+                sidebar.Width -= 20;
                 if (sidebar.Width <= 75)
                 {
                     sidebarExpand = false;
@@ -62,14 +63,13 @@ namespace Main
             }
             else
             {
-                sidebar.Width += 10;
+                sidebar.Width += 15;
                 if (sidebar.Width >= 300)
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();
                 }
             }
-
         }
 
         private void btnHam_Click(object sender, EventArgs e)
@@ -98,8 +98,8 @@ namespace Main
                 home.UpdateAttendanceCounts();
                 home.UpdateStudentCount();
             }
-
         }
+
         private void Home_FormClosed(object sender, FormClosedEventArgs e)
         {
             home = null;
@@ -123,6 +123,7 @@ namespace Main
                 register.Activate();
             }
         }
+
         private void Register_FormClosed(object sender, FormClosedEventArgs e)
         {
             register = null;
@@ -146,6 +147,7 @@ namespace Main
                 manage.Activate();
             }
         }
+
         private void Manage_FormClosed(object sender, FormClosedEventArgs e)
         {
             manage = null;
@@ -172,6 +174,7 @@ namespace Main
                 records.Activate();
             }
         }
+
         private void Record_FormClosed(object sender, FormClosedEventArgs e)
         {
             records = null;
@@ -198,6 +201,7 @@ namespace Main
                 today.Activate();
             }
         }
+
         private void Today_FormClosed(object sender, FormClosedEventArgs e)
         {
             today = null;
@@ -239,9 +243,34 @@ namespace Main
                 log.Activate();
             }
         }
+
         private void Log_FormClosed(object sender, FormClosedEventArgs e)
         {
             log = null;
+        }
+
+        private void btnSettings_Click_1(object sender, EventArgs e)
+        {
+            ResetButtonColors();
+            btnSettings.BackColor = ColorTranslator.FromHtml("#555A55");
+
+            if (settings == null)
+            {
+                settings = new formSettings();
+                settings.FormClosed += Settings_FormClosed;
+                settings.MdiParent = this;
+                settings.Dock = DockStyle.Fill;
+                settings.Show();
+            }
+            else
+            {
+                settings.Activate();
+            }
+        }
+
+        private void Settings_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            settings = null;
         }
     }
 }

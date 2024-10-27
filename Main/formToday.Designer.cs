@@ -60,6 +60,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dgvAttendance = new System.Windows.Forms.DataGridView();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -74,7 +75,7 @@
             this.lbDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbDate.AutoSize = true;
             this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDate.Location = new System.Drawing.Point(127, 31);
+            this.lbDate.Location = new System.Drawing.Point(690, 30);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(68, 25);
             this.lbDate.TabIndex = 4;
@@ -104,23 +105,23 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(132, 512);
+            this.groupBox1.Location = new System.Drawing.Point(133, 492);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(260, 200);
+            this.groupBox1.Size = new System.Drawing.Size(260, 184);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Time In AM";
             // 
             // txtAmInEnd
             // 
-            this.txtAmInEnd.Location = new System.Drawing.Point(45, 143);
+            this.txtAmInEnd.Location = new System.Drawing.Point(45, 137);
             this.txtAmInEnd.Name = "txtAmInEnd";
             this.txtAmInEnd.Size = new System.Drawing.Size(164, 26);
             this.txtAmInEnd.TabIndex = 2;
             // 
             // txtAmInStart
             // 
-            this.txtAmInStart.Location = new System.Drawing.Point(45, 69);
+            this.txtAmInStart.Location = new System.Drawing.Point(45, 63);
             this.txtAmInStart.Name = "txtAmInStart";
             this.txtAmInStart.Size = new System.Drawing.Size(164, 26);
             this.txtAmInStart.TabIndex = 1;
@@ -128,7 +129,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(78, 42);
+            this.label2.Location = new System.Drawing.Point(78, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 20);
             this.label2.TabIndex = 0;
@@ -137,7 +138,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 115);
+            this.label1.Location = new System.Drawing.Point(84, 109);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 20);
             this.label1.TabIndex = 0;
@@ -151,9 +152,9 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(715, 512);
+            this.groupBox2.Location = new System.Drawing.Point(714, 492);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(260, 200);
+            this.groupBox2.Size = new System.Drawing.Size(260, 184);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Time In PM";
@@ -198,9 +199,9 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(429, 512);
+            this.groupBox3.Location = new System.Drawing.Point(428, 492);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(260, 200);
+            this.groupBox3.Size = new System.Drawing.Size(260, 184);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Time Out AM";
@@ -245,9 +246,9 @@
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(1012, 512);
+            this.groupBox4.Location = new System.Drawing.Point(1004, 492);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(260, 200);
+            this.groupBox4.Size = new System.Drawing.Size(260, 184);
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Time Out PM";
@@ -288,7 +289,7 @@
             // 
             this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(591, 734);
+            this.btnSubmit.Location = new System.Drawing.Point(596, 709);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(222, 63);
             this.btnSubmit.TabIndex = 16;
@@ -386,12 +387,24 @@
             this.dgvAttendance.Size = new System.Drawing.Size(1129, 326);
             this.dgvAttendance.TabIndex = 2;
             // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(128, 30);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(68, 25);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Date:";
+            // 
             // formToday
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1406, 819);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.groupBox4);
@@ -453,5 +466,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dgvAttendance;
+        private System.Windows.Forms.Label label11;
     }
 }
