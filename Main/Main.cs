@@ -54,7 +54,7 @@ namespace Main
         {
             if (sidebarExpand)
             {
-                sidebar.Width -= 20;
+                sidebar.Width -= 15;
                 if (sidebar.Width <= 75)
                 {
                     sidebarExpand = false;

@@ -39,7 +39,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dgvAttendance = new System.Windows.Forms.DataGridView();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendance)).BeginInit();
@@ -50,7 +49,7 @@
             this.lbDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbDate.AutoSize = true;
             this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDate.Location = new System.Drawing.Point(690, 30);
+            this.lbDate.Location = new System.Drawing.Point(127, 30);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(68, 25);
             this.lbDate.TabIndex = 4;
@@ -79,7 +78,7 @@
             this.panel1.Controls.Add(this.dgvAttendance);
             this.panel1.Location = new System.Drawing.Point(132, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1129, 396);
+            this.panel1.Size = new System.Drawing.Size(1129, 620);
             this.panel1.TabIndex = 17;
             // 
             // panel2
@@ -156,22 +155,11 @@
             this.dgvAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAttendance.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvAttendance.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvAttendance.Location = new System.Drawing.Point(0, 70);
+            this.dgvAttendance.Location = new System.Drawing.Point(0, 71);
             this.dgvAttendance.Name = "dgvAttendance";
             this.dgvAttendance.ReadOnly = true;
-            this.dgvAttendance.Size = new System.Drawing.Size(1129, 326);
+            this.dgvAttendance.Size = new System.Drawing.Size(1129, 549);
             this.dgvAttendance.TabIndex = 2;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(128, 30);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(68, 25);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Date:";
             // 
             // formToday
             // 
@@ -179,7 +167,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1406, 819);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbTime);
             this.Controls.Add(this.lbDate);
@@ -207,6 +194,5 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dgvAttendance;
-        private System.Windows.Forms.Label label11;
     }
 }
