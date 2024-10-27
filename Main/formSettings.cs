@@ -1,11 +1,8 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Main
@@ -15,9 +12,12 @@ namespace Main
         public formSettings()
         {
             InitializeComponent();
+            LoadTimePeriods();
+            GetEventNameForToday();
         }
 
-        private void btnSubmit_Click_1(object sender, EventArgs e)
+
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
             Database db = new Database();
 
@@ -31,49 +31,50 @@ namespace Main
             string pmInEnd = txtPmInEnd.Text.Trim();
             string pmOutEnd = txtPmOutEnd.Text.Trim();
 
+            if (string.IsNullOrEmpty(amInStart) && string.IsNullOrEmpty(amOutStart) &&
+                string.IsNullOrEmpty(amInEnd) && string.IsNullOrEmpty(amOutEnd) &&
+                string.IsNullOrEmpty(pmInStart) && string.IsNullOrEmpty(pmOutStart) &&
+                string.IsNullOrEmpty(pmInEnd) && string.IsNullOrEmpty(pmOutEnd))
+            {
+                MessageBox.Show("No input provided. Please enter at least one time value.");
+                return;
+            }
 
             try
             {
                 if (!string.IsNullOrEmpty(amInStart) && !string.IsNullOrEmpty(amInEnd))
                 {
-                    amInStart = ConvertTextToTime(amInStart);
-                    amOutStart = ConvertTextToTime(amOutStart);
-                    db.UpdateTime("AMin", amInStart, amInEnd);
+                    db.UpdateTime("AMin", ConvertTextToTime(amInStart), ConvertTextToTime(amInEnd));
                 }
 
                 if (!string.IsNullOrEmpty(amOutStart) && !string.IsNullOrEmpty(amOutEnd))
                 {
-                    amInEnd = ConvertTextToTime(amInEnd);
-                    amOutEnd = ConvertTextToTime(amOutEnd);
-                    db.UpdateTime("AMout", amOutStart, amOutEnd);
+                    db.UpdateTime("AMout", ConvertTextToTime(amOutStart), ConvertTextToTime(amOutEnd));
                 }
 
                 if (!string.IsNullOrEmpty(pmInStart) && !string.IsNullOrEmpty(pmInEnd))
                 {
-                    pmInStart = ConvertTextToTime(pmInStart);
-                    pmOutStart = ConvertTextToTime(pmOutStart);
-                    db.UpdateTime("PMin", pmInStart, pmInEnd);
+                    db.UpdateTime("PMin", ConvertTextToTime(pmInStart), ConvertTextToTime(pmInEnd));
                 }
 
                 if (!string.IsNullOrEmpty(pmOutStart) && !string.IsNullOrEmpty(pmOutEnd))
                 {
-                    pmInEnd = ConvertTextToTime(pmInEnd);
-                    pmOutEnd = ConvertTextToTime(pmOutEnd);
-                    db.UpdateTime("PMout", pmOutStart, pmOutEnd);
+                    db.UpdateTime("PMout", ConvertTextToTime(pmOutStart), ConvertTextToTime(pmOutEnd));
                 }
 
                 MessageBox.Show("Time updated successfully!");
+
+                LoadTimePeriods();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
 
-
             ClearTextboxes();
         }
 
-        public void ClearTextboxes()
+        private void ClearTextboxes()
         {
             txtAmInStart.Clear();
             txtAmOutStart.Clear();
@@ -84,7 +85,6 @@ namespace Main
             txtPmInEnd.Clear();
             txtPmOutEnd.Clear();
         }
-
 
         private string ConvertTextToTime(string input)
         {
@@ -108,6 +108,142 @@ namespace Main
 
             return "00:00:00";
         }
+
+        private void LoadTimePeriods()
+        {
+            Database db = new Database();
+
+            string query = "SELECT Period, StartTime, EndTime FROM tblTime";
+            DataTable dt = db.ExecuteQuery(query);
+
+            lbTIam.Text = string.Empty;
+            lbTOam.Text = string.Empty;
+            lbTIpm.Text = string.Empty;
+            lbTOpm.Text = string.Empty;
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                foreach (DataRow row in dt.Rows)
+                {
+                    string period = row["Period"].ToString();
+                    TimeSpan startTime = TimeSpan.Parse(row["StartTime"].ToString());
+                    TimeSpan endTime = TimeSpan.Parse(row["EndTime"].ToString());
+
+                    string timeRange = $"{startTime:hh\\:mm} - {endTime:hh\\:mm}";
+
+                    switch (period)
+                    {
+                        case "AMin":
+                            lbTIam.Text = timeRange;
+                            break;
+                        case "AMout":
+                            lbTOam.Text = timeRange;
+                            break;
+                        case "PMin":
+                            lbTIpm.Text = timeRange;
+                            break;
+                        case "PMout":
+                            lbTOpm.Text = timeRange;
+                            break;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("No time periods found in the database.");
+            }
+        }
+
+        private void btnSubmitEvent_Click(object sender, EventArgs e)
+        {
+            string eventName = txtEventName.Text.Trim();
+            DateTime eventDate = DateTime.Now;
+
+            if (string.IsNullOrEmpty(eventName))
+            {
+                MessageBox.Show("Please enter an event name.");
+                return;
+            }
+
+            try
+            {
+                Database db = new Database();
+                using (var connection = db.GetConnection())
+                {
+                    connection.Open(); // Open the database connection
+
+                    // Insert new event
+                    string query = "INSERT INTO tblEvent (eventName, Date) VALUES (@eventName, @eventDate)";
+                    using (var command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@eventName", eventName);
+                        command.Parameters.AddWithValue("@eventDate", eventDate);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Event saved successfully!");
+                            txtEventName.Clear();
+
+                            // Update the label with the new event name
+                            UpdateEventName(eventName);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to save the event.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+
+            // Check for events on the current date
+            GetEventNameForToday();
+        }
+
+        private void GetEventNameForToday()
+        {
+            DateTime currentDate = DateTime.Now.Date; // Get the current date
+            string eventName = "No Event Yet"; // Default message
+
+            try
+            {
+                Database db = new Database();
+                using (var connection = db.GetConnection())
+                {
+                    connection.Open(); // Open the database connection
+                    string query = "SELECT eventName FROM tblEvent WHERE Date = @eventDate";
+                    using (var command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@eventDate", currentDate);
+                        object result = command.ExecuteScalar(); // Execute the query and get the result
+
+                        if (result != null)
+                        {
+                            eventName = result.ToString(); // Update the event name if found
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while fetching the event: " + ex.Message);
+            }
+            finally
+            {
+                // Update the label with the event name or "No Event Yet"
+                UpdateEventName(eventName);
+            }
+        }
+
+        private void UpdateEventName(string eventName)
+        {
+            lbeventName.Text = eventName; // Update the label with the event name
+        }
+
 
     }
 }
