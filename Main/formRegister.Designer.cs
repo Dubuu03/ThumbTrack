@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,13 +49,18 @@
             this.btnBrowse = new System.Windows.Forms.Button();
             this.btnStartCamera = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lbFingerprint = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.statusText = new System.Windows.Forms.TextBox();
+            this.Prompt = new System.Windows.Forms.TextBox();
+            this.statusLabel = new System.Windows.Forms.Label();
+            this.fImage = new System.Windows.Forms.PictureBox();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fImage)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -138,7 +144,7 @@
             // 
             this.btnRegister.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(674, 631);
+            this.btnRegister.Location = new System.Drawing.Point(1015, 631);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(222, 63);
             this.btnRegister.TabIndex = 15;
@@ -290,41 +296,76 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox2.Controls.Add(this.lbFingerprint);
-            this.groupBox2.Controls.Add(this.pictureBox2);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.statusText);
+            this.groupBox2.Controls.Add(this.Prompt);
+            this.groupBox2.Controls.Add(this.statusLabel);
+            this.groupBox2.Controls.Add(this.fImage);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(141, 122);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(340, 459);
+            this.groupBox2.Size = new System.Drawing.Size(340, 572);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Place fingerpirnt on scanner";
             // 
-            // lbFingerprint
+            // label8
             // 
-            this.lbFingerprint.AutoSize = true;
-            this.lbFingerprint.Location = new System.Drawing.Point(33, 381);
-            this.lbFingerprint.Name = "lbFingerprint";
-            this.lbFingerprint.Size = new System.Drawing.Size(79, 24);
-            this.lbFingerprint.TabIndex = 17;
-            this.lbFingerprint.Text = "Ready...";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(31, 353);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 15);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Prompt:";
             // 
-            // pictureBox2
+            // statusText
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(25, 57);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(287, 287);
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
+            this.statusText.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.statusText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusText.Location = new System.Drawing.Point(25, 406);
+            this.statusText.MaxLength = 4;
+            this.statusText.Multiline = true;
+            this.statusText.Name = "statusText";
+            this.statusText.Size = new System.Drawing.Size(287, 109);
+            this.statusText.TabIndex = 24;
+            // 
+            // Prompt
+            // 
+            this.Prompt.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Prompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Prompt.Location = new System.Drawing.Point(25, 379);
+            this.Prompt.MaxLength = 4;
+            this.Prompt.Name = "Prompt";
+            this.Prompt.Size = new System.Drawing.Size(287, 21);
+            this.Prompt.TabIndex = 23;
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.AutoSize = true;
+            this.statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusLabel.Location = new System.Drawing.Point(31, 535);
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(51, 15);
+            this.statusLabel.TabIndex = 17;
+            this.statusLabel.Text = "Ready...";
+            // 
+            // fImage
+            // 
+            this.fImage.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.fImage.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.fImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fImage.Location = new System.Drawing.Point(25, 57);
+            this.fImage.Name = "fImage";
+            this.fImage.Size = new System.Drawing.Size(287, 287);
+            this.fImage.TabIndex = 16;
+            this.fImage.TabStop = false;
             // 
             // btnClear
             // 
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(446, 631);
+            this.btnClear.Location = new System.Drawing.Point(499, 631);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(222, 63);
             this.btnClear.TabIndex = 19;
@@ -332,12 +373,29 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // btnStart
+            // 
+            this.btnStart.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(756, 631);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(222, 63);
+            this.btnStart.TabIndex = 20;
+            this.btnStart.Text = "START SCAN";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // formRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1390, 780);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnRegister);
@@ -351,7 +409,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -373,12 +431,17 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBoxPhoto;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox fImage;
         private System.Windows.Forms.Button btnBrowse;
-        private System.Windows.Forms.Label lbFingerprint;
+        private System.Windows.Forms.Label statusLabel;
         private System.Windows.Forms.Button btnCapturePhoto;
         private System.Windows.Forms.Button btnStartCamera;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.TextBox Prompt;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox statusText;
+        private System.Windows.Forms.Timer timer1;
     }
 }

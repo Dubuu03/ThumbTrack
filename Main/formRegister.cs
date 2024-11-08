@@ -5,15 +5,32 @@ using System.Windows.Forms;
 using System.Drawing;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using DPFP;
+using DPFP.Capture;
 
 namespace Main
 {
-    public partial class formRegister : Form
+    public partial class formRegister : Form, DPFP.Capture.EventHandler
     {
         private VideoCaptureDevice videoSource;
         private bool isCameraRunning = false;
+        private bool isScannerRunning = false;
+        private bool isFingerprintEnrolled = false;
         private string defaultImagePath = @"..\..\..\Student Photo\Default.png";
         private Bitmap lastCapturedImage;
+
+        protected DPFP.Processing.Enrollment Enroller;
+
+        private DPFP.Capture.Capture Capturer;
+        private byte[] fingerprintData;
+        public int StudentID { get; set; }
+        public string Course { get; set; }
+        public string Section { get; set; }
+        public string Password { get; set; }
+        public int Year { get; set; }
+
+        private DPFP.Template Template;
+        public string name;
 
         public formRegister()
         {
@@ -29,12 +46,275 @@ namespace Main
             pictureBoxPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxPhoto.Width = 287;
             pictureBoxPhoto.Height = 287;
+
+            InitializeFingerprintCapture();
+
+            btnRegister.Enabled = false;
+
+            txtStudentID.TextChanged += ValidateInputFields;
+            txtName.TextChanged += ValidateInputFields;
+            txtCourse.TextChanged += ValidateInputFields;
+            txtYear.TextChanged += ValidateInputFields;
+            txtSection.TextChanged += ValidateInputFields;
+            txtPassword.TextChanged += ValidateInputFields;
         }
 
         private void formRegister_Load(object sender, EventArgs e)
         {
             this.ControlBox = false;
         }
+
+        protected void SetPrompt(string prompt)
+        {
+            if (this.IsHandleCreated)
+            {
+                this.Invoke(new Action(() =>
+                {
+                    Prompt.Text = prompt;
+                }));
+            }
+            else
+            {
+                Prompt.Text = prompt;
+            }
+        }
+
+        protected void SetStatus(string status)
+        {
+            if (statusLabel.IsHandleCreated)
+            {
+                this.Invoke(new Action(() =>
+                {
+                    statusLabel.Text = status;
+                    statusLabel.Refresh();
+                }));
+            }
+        }
+
+        private void UpdateStatus()
+        {
+            SetStatus(String.Format("Fingerprint sample needed: {0}", Enroller.FeaturesNeeded));
+        }
+
+        protected void MakeReport(string message)
+        {
+            this.Invoke(new Action(() =>
+            {
+                statusText.AppendText(message + "\r\n");
+            }));
+        }
+        protected virtual void InitializeFingerprintCapture()
+        {
+            try
+            {
+                Console.WriteLine("Initializing fingerprint capture...");
+                Capturer = new DPFP.Capture.Capture();
+                Enroller = new DPFP.Processing.Enrollment();
+                if (Capturer != null)
+                {
+                    Capturer.EventHandler = this;
+                    SetPrompt("Press start scan to start scanning.");
+                    Console.WriteLine("Fingerprint capture initialized successfully.");
+                }
+                else
+                {
+                    Console.WriteLine("Failed to initialize fingerprint capture: Capturer is null.");
+                    SetPrompt("Cannot initiate capture operation. Capturer is null.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception during initialization: {ex}");
+                SetPrompt($"Cannot initiate capture operation: {ex.Message}");
+            }
+        }
+
+        protected virtual void Process(DPFP.Sample Sample)
+        {
+            DrawPicture(ConvertSampleToBitmap(Sample));
+            fingerprintData = ConvertSampleToByteArray(Sample);
+
+            // Extract features and update the Enroller
+            DPFP.FeatureSet features = ExtractFeatures(Sample, DPFP.Processing.DataPurpose.Enrollment);
+
+            if (features != null)
+            {
+                try
+                {
+                    MakeReport("The fingerprint feature set was created");
+                    Enroller.AddFeatures(features); // Add features to Enroller
+                }
+                catch (DPFP.Error.SDKException ex)
+                {
+                    // Show message box on failure and reset enrollment
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        MessageBox.Show("Enrollment procedure failed. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Enroller.Clear();
+                        UpdateStatus();
+                    });
+                    return;
+                }
+
+                UpdateStatus(); // Show remaining samples needed
+
+                // Check enrollment status
+                this.Invoke((MethodInvoker)delegate
+                {
+                    if (Enroller.TemplateStatus == DPFP.Processing.Enrollment.Status.Ready)
+                    {
+                        // Enrollment is successful
+                        MessageBox.Show("Fingerprint enrollment successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        SetStatus("Success. Fingerprint Accepted");
+                        btnStart.Text = "START SCAN";
+                        isScannerRunning = false;
+                        StopFingerprintCapture();
+
+                        // Reset the Enroller for the next enrollment
+                        Enroller = new DPFP.Processing.Enrollment();
+
+                        isFingerprintEnrolled = true; // Mark as successfully enrolled
+                        ValidateInputFields(null, null);
+
+                    }
+                    else if (Enroller.TemplateStatus == DPFP.Processing.Enrollment.Status.Failed)
+                    {
+                        // If enrollment failed, reset
+                        MessageBox.Show("Enrollment procedure failed. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        ResetEnrollment(); // Reset after failure
+                    }
+                });
+            }
+        }
+
+
+        private void ResetEnrollment()
+        {
+            Enroller = new DPFP.Processing.Enrollment();
+            fingerprintData = null;
+            UpdateStatus();
+        }
+
+        private void DrawPicture(Bitmap bitmap)
+        {
+            this.Invoke(new Action(delegate
+            {
+                fImage.Image = new Bitmap(bitmap, fImage.Size);
+            }));
+        }
+
+        protected Bitmap ConvertSampleToBitmap(DPFP.Sample Sample)
+        {
+            DPFP.Capture.SampleConversion Converter = new DPFP.Capture.SampleConversion();
+            Bitmap bitmap = null;
+            Converter.ConvertToPicture(Sample, ref bitmap);
+            return bitmap;
+        }
+
+        private byte[] ConvertSampleToByteArray(DPFP.Sample sample)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                DPFP.Capture.SampleConversion converter = new DPFP.Capture.SampleConversion();
+                Bitmap bmp = ConvertSampleToBitmap(sample);
+                bmp.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+
+                return ms.ToArray();
+            }
+        }
+
+        protected void StartFingerprintCapture()
+        {
+            if (Capturer != null)
+            {
+                try
+                {
+                    Capturer.StartCapture();
+                    UpdateStatus();
+                    SetPrompt("Using the fingerprint reader, scan your fingerprint.");
+                }
+                catch
+                {
+                    SetPrompt("Can't initiate capture.");
+                }
+            }
+        }
+
+
+        protected void StopFingerprintCapture()
+        {
+            if (Capturer != null)
+            {
+                try
+                {
+                    Capturer.StopCapture();
+                    SetPrompt("Press start scan to start scanning.");
+                }
+                catch
+                {
+                    SetPrompt("Can't stop capture.");
+                }
+            }
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            if (isScannerRunning)
+            {
+                StopFingerprintCapture();
+                statusText.Clear();
+                SetStatus("Press start scan to begin fingerprint enrollment.");
+                isScannerRunning = false;
+                btnStart.Text = "START SCAN";
+                timer1.Dispose();
+            }
+            else
+            {
+                StartFingerprintCapture();
+                isScannerRunning = true;
+                btnStart.Text = "STOP SCAN";
+                timer1.Interval = 1000;
+                timer1.Start();
+            }
+        }
+
+        protected DPFP.FeatureSet ExtractFeatures(DPFP.Sample Sample, DPFP.Processing.DataPurpose Purpose)
+        {
+            DPFP.Processing.FeatureExtraction Extractor = new DPFP.Processing.FeatureExtraction();
+            DPFP.Capture.CaptureFeedback feedback = DPFP.Capture.CaptureFeedback.None;
+            DPFP.FeatureSet features = new DPFP.FeatureSet();
+
+            Extractor.CreateFeatureSet(Sample, Purpose, ref feedback, ref features);
+            if (feedback == DPFP.Capture.CaptureFeedback.Good)
+                return features;
+            else
+                return null;
+        }
+
+        private void ValidateInputFields(object sender, EventArgs e)
+        {
+            btnRegister.Enabled = !string.IsNullOrWhiteSpace(txtStudentID.Text) &&
+                                  !string.IsNullOrWhiteSpace(txtName.Text) &&
+                                  !string.IsNullOrWhiteSpace(txtCourse.Text) &&
+                                  !string.IsNullOrWhiteSpace(txtYear.Text) &&
+                                  !string.IsNullOrWhiteSpace(txtSection.Text) &&
+                                  !string.IsNullOrWhiteSpace(txtPassword.Text) &&
+                                  isFingerprintEnrolled;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
@@ -207,6 +487,47 @@ namespace Main
         private void btnClear_Click(object sender, EventArgs e)
         {
             ClearFields();
+        }
+
+        public void OnReaderConnect(object Capture, string ReaderSerialNumber)
+        {
+            MakeReport("The fingerprint reader was connected.");
+        }
+
+        public void OnReaderDisconnect(object Capture, string ReaderSerialNumber)
+        {
+            MakeReport("The fingerprint reader was disconnected.");
+        }
+
+        public void OnFingerTouch(object Capture, string ReaderSerialNumber)
+        {
+            MakeReport("The fingerprint reader was touched.");
+        }
+
+        public void OnFingerGone(object Capture, string ReaderSerialNumber)
+        {
+            MakeReport("The finger was removed from the fingerprint reader.");
+        }
+
+        public void OnComplete(object Capture, string ReaderSerialNumber, DPFP.Sample Sample)
+        {
+            MakeReport("The fingerprint sample was captured.");
+            SetPrompt("Scan the same fingerprint again.");
+            Process(Sample);
+        }
+
+        public void OnSampleQuality(object Capture, string ReaderSerialNumber, DPFP.Capture.CaptureFeedback CaptureFeedback)
+        {
+            if (CaptureFeedback == DPFP.Capture.CaptureFeedback.Good)
+                MakeReport("The quality of the fingerprint sample is good.");
+            else
+                MakeReport("The quality of the fingerprint sample is poor.");
+        }
+
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Start();
         }
     }
 }
