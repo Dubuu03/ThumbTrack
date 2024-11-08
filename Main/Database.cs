@@ -206,40 +206,35 @@ namespace Main
 
 
 
-        public bool RegisterStudent(int studentID, string name, string course, int year, string section, string password, string photoPath)
+        public bool RegisterStudent(int studentID, string name, string course, int year, string section, string password, string photoPath, byte[] primaryFinger)
         {
-            bool isInserted = false;
-            string hashedPassword = HashPassword(password);
-
-            string query = "INSERT INTO tblstudents (StudentID, Name, Password, Course, Year, Section, AccessLevel, Photo) " +
-                           "VALUES (@StudentID, @Name, @Password, @Course, @Year, @Section, 'Student', @Photo)";
-
-            using (MySqlConnection conn = GetConnection())
+            try
             {
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (var connection = GetConnection())
                 {
-                    cmd.Parameters.AddWithValue("@StudentID", studentID);
-                    cmd.Parameters.AddWithValue("@Name", name);
-                    cmd.Parameters.AddWithValue("@Password", hashedPassword);
-                    cmd.Parameters.AddWithValue("@Course", course);
-                    cmd.Parameters.AddWithValue("@Year", year);
-                    cmd.Parameters.AddWithValue("@Section", section);
-                    cmd.Parameters.AddWithValue("@Photo", photoPath); 
+                    string query = "INSERT INTO tblstudents (StudentID, Name, Course, Year, Section, Password, Photo, PrimaryFinger) VALUES (@StudentID, @Name, @Course, @Year, @Section, @Password, @PhotoPath, @PrimaryFinger)";
+                    using (var command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@StudentID", studentID);
+                        command.Parameters.AddWithValue("@Name", name);
+                        command.Parameters.AddWithValue("@Course", course);
+                        command.Parameters.AddWithValue("@Year", year);
+                        command.Parameters.AddWithValue("@Section", section);
+                        command.Parameters.AddWithValue("@Password", password);
+                        command.Parameters.AddWithValue("@PhotoPath", photoPath ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@PrimaryFinger", primaryFinger);
 
-                    try
-                    {
-                        conn.Open();
-                        cmd.ExecuteNonQuery();
-                        isInserted = true;
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        return true;
                     }
                 }
             }
-
-            return isInserted;
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Database error: {ex.Message}");
+                return false;
+            }
         }
 
 

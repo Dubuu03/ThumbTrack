@@ -325,6 +325,7 @@ namespace Main
             string password = txtPassword.Text;
             int year;
 
+            // Validate Student ID and Year as integers
             if (!int.TryParse(txtStudentID.Text, out studentID))
             {
                 MessageBox.Show("Please enter a valid Student ID.");
@@ -337,6 +338,7 @@ namespace Main
                 return;
             }
 
+            // Validate password requirements
             if (password.Length != 6 || !password.All(char.IsDigit))
             {
                 MessageBox.Show("Password must be exactly 6 digits.");
@@ -350,6 +352,7 @@ namespace Main
                 return;
             }
 
+            // Save photo to file
             string filePath = null;
             if (pictureBoxPhoto.Image != null)
             {
@@ -359,7 +362,15 @@ namespace Main
                 pictureBoxPhoto.Image.Save(filePath, System.Drawing.Imaging.ImageFormat.Jpeg);
             }
 
-            if (db.RegisterStudent(studentID, name, course, year, section, password, filePath))
+            // Ensure fingerprint data is captured before registration
+            if (fingerprintData == null || fingerprintData.Length == 0)
+            {
+                MessageBox.Show("Please capture a fingerprint before registering.");
+                return;
+            }
+
+            // Register student with fingerprint data
+            if (db.RegisterStudent(studentID, name, course, year, section, password, filePath, fingerprintData))
             {
                 MessageBox.Show("Registration successful!");
                 ClearFields();
@@ -369,6 +380,7 @@ namespace Main
                 MessageBox.Show("Registration failed. Please try again.");
             }
         }
+
 
         private void ClearFields()
         {
