@@ -39,16 +39,18 @@
             this.pnRecords = new System.Windows.Forms.Panel();
             this.pnLogout = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
+            this.pnSettings = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnManage = new System.Windows.Forms.Button();
             this.btnRecord = new System.Windows.Forms.Button();
             this.btnToday = new System.Windows.Forms.Button();
+            this.btnLog = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnHam = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnLog = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnToday.SuspendLayout();
             this.pnRegister.SuspendLayout();
@@ -57,8 +59,9 @@
             this.pnRecords.SuspendLayout();
             this.pnLogout.SuspendLayout();
             this.sidebar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
             this.panel2.SuspendLayout();
+            this.pnSettings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -125,7 +128,7 @@
             // pnLogout
             // 
             this.pnLogout.Controls.Add(this.btnLogout);
-            this.pnLogout.Location = new System.Drawing.Point(3, 603);
+            this.pnLogout.Location = new System.Drawing.Point(3, 703);
             this.pnLogout.Name = "pnLogout";
             this.pnLogout.Size = new System.Drawing.Size(300, 94);
             this.pnLogout.TabIndex = 4;
@@ -139,6 +142,7 @@
             this.sidebar.Controls.Add(this.pnRecords);
             this.sidebar.Controls.Add(this.pnToday);
             this.sidebar.Controls.Add(this.panel2);
+            this.sidebar.Controls.Add(this.pnSettings);
             this.sidebar.Controls.Add(this.pnLogout);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 55);
@@ -146,10 +150,26 @@
             this.sidebar.Size = new System.Drawing.Size(300, 824);
             this.sidebar.TabIndex = 3;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnLog);
+            this.panel2.Location = new System.Drawing.Point(3, 503);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(300, 94);
+            this.panel2.TabIndex = 4;
+            // 
             // sidebarTransition
             // 
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
+            // 
+            // pnSettings
+            // 
+            this.pnSettings.Controls.Add(this.btnSettings);
+            this.pnSettings.Location = new System.Drawing.Point(3, 603);
+            this.pnSettings.Name = "pnSettings";
+            this.pnSettings.Size = new System.Drawing.Size(300, 94);
+            this.pnSettings.TabIndex = 5;
             // 
             // btnHome
             // 
@@ -251,6 +271,45 @@
             this.btnToday.UseVisualStyleBackColor = false;
             this.btnToday.Click += new System.EventHandler(this.btnToday_Click);
             // 
+            // btnLog
+            // 
+            this.btnLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            this.btnLog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnLog.FlatAppearance.BorderSize = 0;
+            this.btnLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLog.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLog.Image = ((System.Drawing.Image)(resources.GetObject("btnLog.Image")));
+            this.btnLog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLog.Location = new System.Drawing.Point(0, 0);
+            this.btnLog.Name = "btnLog";
+            this.btnLog.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnLog.Size = new System.Drawing.Size(300, 94);
+            this.btnLog.TabIndex = 2;
+            this.btnLog.Text = "           Log Attendance";
+            this.btnLog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLog.UseVisualStyleBackColor = false;
+            this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(0, 0);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnSettings.Size = new System.Drawing.Size(300, 94);
+            this.btnSettings.TabIndex = 2;
+            this.btnSettings.Text = "           Settings";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click_1);
+            // 
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
@@ -281,34 +340,6 @@
             this.btnHam.TabStop = false;
             this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnLog);
-            this.panel2.Location = new System.Drawing.Point(3, 503);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 94);
-            this.panel2.TabIndex = 4;
-            // 
-            // btnLog
-            // 
-            this.btnLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.btnLog.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnLog.FlatAppearance.BorderSize = 0;
-            this.btnLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLog.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnLog.Image = ((System.Drawing.Image)(resources.GetObject("btnLog.Image")));
-            this.btnLog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLog.Location = new System.Drawing.Point(0, 0);
-            this.btnLog.Name = "btnLog";
-            this.btnLog.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnLog.Size = new System.Drawing.Size(300, 94);
-            this.btnLog.TabIndex = 2;
-            this.btnLog.Text = "           Log Attendance";
-            this.btnLog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLog.UseVisualStyleBackColor = false;
-            this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,8 +360,9 @@
             this.pnRecords.ResumeLayout(false);
             this.pnLogout.ResumeLayout(false);
             this.sidebar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.pnSettings.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -356,6 +388,8 @@
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnLog;
+        private System.Windows.Forms.Panel pnSettings;
+        private System.Windows.Forms.Button btnSettings;
     }
 }
 
