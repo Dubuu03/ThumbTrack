@@ -47,19 +47,19 @@
       <HintPath>..\packages\BouncyCastle.Cryptography.2.3.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
     </Reference>
     <Reference Include="DPFPDevNET">
-      <HintPath>C:\Program Files (x86)\DigitalPersona\Pro Workstation\Bin\DPFPDevNET.dll</HintPath>
+      <HintPath>..\..\Users\narci\Downloads\drive-download-20241109T074008Z-001\DPFPDevNET.dll</HintPath>
     </Reference>
     <Reference Include="DPFPEngNET">
-      <HintPath>C:\Program Files (x86)\DigitalPersona\Pro Workstation\Bin\DPFPEngNET.dll</HintPath>
+      <HintPath>..\..\Users\narci\Downloads\drive-download-20241109T074008Z-001\DPFPEngNET.dll</HintPath>
     </Reference>
     <Reference Include="DPFPGuiNET">
-      <HintPath>C:\Program Files (x86)\DigitalPersona\Pro Workstation\Bin\DPFPGuiNET.dll</HintPath>
+      <HintPath>..\..\Users\narci\Downloads\drive-download-20241109T074008Z-001\DPFPGuiNET.dll</HintPath>
     </Reference>
     <Reference Include="DPFPShrNET">
-      <HintPath>C:\Program Files (x86)\DigitalPersona\Pro Workstation\Bin\DPFPShrNET.dll</HintPath>
+      <HintPath>..\..\Users\narci\Downloads\drive-download-20241109T074008Z-001\DPFPShrNET.dll</HintPath>
     </Reference>
     <Reference Include="DPFPVerNET">
-      <HintPath>C:\Program Files (x86)\DigitalPersona\Pro Workstation\Bin\DPFPVerNET.dll</HintPath>
+      <HintPath>..\..\Users\narci\Downloads\drive-download-20241109T074008Z-001\DPFPVerNET.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf, Version=3.26.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.26.1\lib\net45\Google.Protobuf.dll</HintPath>
