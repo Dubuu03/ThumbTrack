@@ -22,6 +22,11 @@ namespace Main
             SetTextBoxesReadOnly(true);
             DisableActionButtons();
 
+            if (File.Exists(defaultImagePath))
+            {
+                pictureBoxPhoto.Image = Image.FromFile(defaultImagePath);
+            }
+
             txtPassword.Enabled = false;
         }
 

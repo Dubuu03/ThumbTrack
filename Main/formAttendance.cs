@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Main
 {
@@ -15,34 +16,35 @@ namespace Main
 
         private void btnTimeIn_Click(object sender, EventArgs e)
         {
-            OpenNameFormForAttendance(true);
+            OpenStudentIDFormForAttendance(true);
         }
 
         private void btnTimeOut_Click(object sender, EventArgs e)
         {
-            OpenNameFormForAttendance(false);
+            OpenStudentIDFormForAttendance(false);
         }
 
-        private void OpenNameFormForAttendance(bool isTimeIn)
+        private void OpenStudentIDFormForAttendance(bool isTimeIn)
         {
-            using (Name nameForm = new Name())
+            using (formStudentID studentIdForm = new formStudentID())  // Assuming StudentIDForm asks for the student ID
             {
-                if (nameForm.ShowDialog() == DialogResult.OK)
+                if (studentIdForm.ShowDialog() == DialogResult.OK)
                 {
-                    string studentName = nameForm.StudentName;
-                    string query = $"SELECT StudentID, Course, `Year`, Section FROM tblstudents WHERE Name = '{studentName}'";
+                    string studentId = studentIdForm.StudentId;  // Get the student ID entered
+                    string query = $"SELECT Name, Course, `Year`, Section FROM tblstudents WHERE StudentID = '{studentId}'";
                     Database db = new Database();
                     DataTable dt = db.ExecuteQuery(query);
 
                     if (dt.Rows.Count > 0)
                     {
-                        string studentId = dt.Rows[0]["StudentID"].ToString();
+                        string studentName = dt.Rows[0]["Name"].ToString();
                         string course = dt.Rows[0]["Course"].ToString();
                         int year = Convert.ToInt32(dt.Rows[0]["Year"]);
                         string section = dt.Rows[0]["Section"].ToString();
                         DateTime currentTime = DateTime.Now;
                         string dateToday = currentTime.ToString("yyyy-MM-dd");
 
+                        // Retrieve attendance records for the given student and date
                         DataTable timeInRecords = db.GetAttendanceRecords(studentId, dateToday);
 
                         if (isTimeIn)
@@ -241,7 +243,7 @@ namespace Main
                 loggedForm.Show();
 
                 Timer timer = new Timer();
-                timer.Interval = 3000;
+                timer.Interval = 3000; // 3 seconds
                 timer.Tick += (s, args) =>
                 {
                     timer.Stop();
@@ -257,5 +259,6 @@ namespace Main
         {
 
         }
+      
     }
 }

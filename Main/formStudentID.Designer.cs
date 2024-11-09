@@ -1,6 +1,6 @@
 ﻿namespace Main
 {
-    partial class Name
+    partial class formStudentID
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtStudentId = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -39,9 +39,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(89, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 20);
+            this.label1.Size = new System.Drawing.Size(146, 20);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Enter your Name:";
+            this.label1.Text = "Enter Student ID";
             // 
             // btnSubmit
             // 
@@ -53,23 +53,23 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // txtName
+            // txtStudentId
             // 
-            this.txtName.Location = new System.Drawing.Point(57, 62);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(211, 20);
-            this.txtName.TabIndex = 6;
+            this.txtStudentId.Location = new System.Drawing.Point(57, 62);
+            this.txtStudentId.Name = "txtStudentId";
+            this.txtStudentId.Size = new System.Drawing.Size(211, 20);
+            this.txtStudentId.TabIndex = 6;
             // 
-            // Name
+            // formStudentID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(328, 164);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.txtName);
-            this.Name = "Name";
-            this.Text = "Name";
+            this.Controls.Add(this.txtStudentId);
+            this.Name = "formStudentID";
+            this.Text = "Manual Attendance";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -79,6 +79,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtStudentId;
     }
 }
