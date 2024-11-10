@@ -193,6 +193,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="roundedbutton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="roundedpanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="formAttendance.resx">
       <DependentUpon>formAttendance.cs</DependentUpon>
     </EmbeddedResource>

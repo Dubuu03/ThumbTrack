@@ -37,5 +37,10 @@ namespace Main
             lbTiPM.Text = timeInPMCount.ToString();
             lbToPM.Text = timeOutPMCount.ToString();
         }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
