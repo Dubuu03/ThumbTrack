@@ -423,7 +423,7 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
             this.panel1.Controls.Add(this.btnStart);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.btnClear);

@@ -17,7 +17,6 @@ namespace Main
             UpdateAttendanceCounts(); 
         }
 
-
         public void UpdateStudentCount()
         {
             Database db = new Database();

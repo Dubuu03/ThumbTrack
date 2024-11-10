@@ -54,17 +54,20 @@
             this.tbStudentID = new System.Windows.Forms.TextBox();
             this.btnShow = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDelete
             // 
             this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(1032, 798);
+            this.btnDelete.ForeColor = System.Drawing.Color.Black;
+            this.btnDelete.Location = new System.Drawing.Point(880, 737);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(296, 78);
@@ -76,7 +79,8 @@
             // 
             this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(1359, 798);
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdate.Location = new System.Drawing.Point(1207, 737);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(296, 78);
@@ -105,7 +109,8 @@
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(671, 181);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(519, 120);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -153,6 +158,7 @@
             // 
             this.btnCapturePhoto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCapturePhoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapturePhoto.ForeColor = System.Drawing.Color.Black;
             this.btnCapturePhoto.Location = new System.Drawing.Point(756, 433);
             this.btnCapturePhoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCapturePhoto.Name = "btnCapturePhoto";
@@ -179,6 +185,7 @@
             // 
             this.btnBrowse.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowse.ForeColor = System.Drawing.Color.Black;
             this.btnBrowse.Location = new System.Drawing.Point(551, 487);
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBrowse.Name = "btnBrowse";
@@ -192,6 +199,7 @@
             // 
             this.btnStartCamera.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnStartCamera.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartCamera.ForeColor = System.Drawing.Color.Black;
             this.btnStartCamera.Location = new System.Drawing.Point(551, 433);
             this.btnStartCamera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStartCamera.Name = "btnStartCamera";
@@ -310,7 +318,8 @@
             this.groupBox2.Controls.Add(this.lbFingerprint);
             this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(188, 181);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(36, 120);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -347,7 +356,8 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(181, 85);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(29, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(262, 31);
@@ -358,7 +368,8 @@
             // 
             this.tbStudentID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbStudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbStudentID.Location = new System.Drawing.Point(469, 80);
+            this.tbStudentID.ForeColor = System.Drawing.Color.White;
+            this.tbStudentID.Location = new System.Drawing.Point(317, 19);
             this.tbStudentID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbStudentID.Name = "tbStudentID";
             this.tbStudentID.Size = new System.Drawing.Size(301, 34);
@@ -373,7 +384,7 @@
             this.btnShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShow.ForeColor = System.Drawing.Color.White;
             this.btnShow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnShow.Location = new System.Drawing.Point(795, 80);
+            this.btnShow.Location = new System.Drawing.Point(643, 19);
             this.btnShow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnShow.Name = "btnShow";
             this.btnShow.Padding = new System.Windows.Forms.Padding(16, 0, 16, 0);
@@ -387,7 +398,8 @@
             // 
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(693, 798);
+            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.Location = new System.Drawing.Point(541, 737);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(296, 78);
@@ -396,20 +408,30 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
+            this.panel1.Controls.Add(this.btnClear);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.btnShow);
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.tbStudentID);
+            this.panel1.Controls.Add(this.btnUpdate);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnDelete);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1550, 870);
+            this.panel1.TabIndex = 27;
+            // 
             // formManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1853, 960);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnShow);
-            this.Controls.Add(this.tbStudentID);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -422,8 +444,9 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -455,5 +478,6 @@
         private System.Windows.Forms.Button btnPassword;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Panel panel1;
     }
 }
