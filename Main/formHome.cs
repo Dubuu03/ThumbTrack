@@ -42,5 +42,10 @@ namespace Main
         {
 
         }
+
+        private void lbStudent_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
