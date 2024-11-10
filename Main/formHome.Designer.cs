@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formHome));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lbToPM = new System.Windows.Forms.Label();
@@ -285,7 +284,6 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Controls.Add(this.panel5);
             this.panel8.Controls.Add(this.panel2);
@@ -301,7 +299,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
-            this.panel9.Location = new System.Drawing.Point(39, 63);
+            this.panel9.Location = new System.Drawing.Point(141, 63);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(608, 777);
             this.panel9.TabIndex = 8;
