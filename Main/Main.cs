@@ -29,7 +29,7 @@ namespace Main
             home.Show();
             mdiProp();
 
-            btnHome.BackColor = ColorTranslator.FromHtml("#555A55");
+            btnHome.BackColor = ColorTranslator.FromHtml("#56aeff");
         }
 
         private void mdiProp()
@@ -40,13 +40,13 @@ namespace Main
 
         private void ResetButtonColors()
         {
-            btnHome.BackColor = ColorTranslator.FromHtml("#2A2A2A");
-            btnRegister.BackColor = ColorTranslator.FromHtml("#2A2A2A");
-            btnManage.BackColor = ColorTranslator.FromHtml("#2A2A2A");
-            btnRecord.BackColor = ColorTranslator.FromHtml("#2A2A2A");
-            btnToday.BackColor = ColorTranslator.FromHtml("#2A2A2A");
-            btnLog.BackColor = ColorTranslator.FromHtml("#2A2A2A");
-            btnSettings.BackColor = ColorTranslator.FromHtml("#2A2A2A");
+            btnHome.BackColor = ColorTranslator.FromHtml("#313b44");
+            btnRegister.BackColor = ColorTranslator.FromHtml("#313b44");
+            btnManage.BackColor = ColorTranslator.FromHtml("#313b44");
+            btnRecord.BackColor = ColorTranslator.FromHtml("#313b44");
+            btnToday.BackColor = ColorTranslator.FromHtml("#313b44");
+            btnLog.BackColor = ColorTranslator.FromHtml("#313b44");
+            btnSettings.BackColor = ColorTranslator.FromHtml("#313b44");
         }
 
         bool sidebarExpand = true;
@@ -80,7 +80,7 @@ namespace Main
         private void btnHome_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
-            btnHome.BackColor = ColorTranslator.FromHtml("#555A55");
+            btnHome.BackColor = ColorTranslator.FromHtml("#56aeff");
 
             if (home == null)
             {
@@ -108,7 +108,7 @@ namespace Main
         private void btnRegister_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
-            btnRegister.BackColor = ColorTranslator.FromHtml("#555A55");
+            btnRegister.BackColor = ColorTranslator.FromHtml("#56aeff");
 
             if (register == null)
             {
@@ -132,7 +132,7 @@ namespace Main
         private void btnManage_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
-            btnManage.BackColor = ColorTranslator.FromHtml("#555A55");
+            btnManage.BackColor = ColorTranslator.FromHtml("#56aeff");
 
             if (manage == null)
             {
@@ -156,7 +156,7 @@ namespace Main
         private void btnRecord_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
-            btnRecord.BackColor = ColorTranslator.FromHtml("#555A55");
+            btnRecord.BackColor = ColorTranslator.FromHtml("#56aeff");
 
             if (records == null)
             {
@@ -183,7 +183,7 @@ namespace Main
         private void btnToday_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
-            btnToday.BackColor = ColorTranslator.FromHtml("#555A55");
+            btnToday.BackColor = ColorTranslator.FromHtml("#56aeff");
 
             if (today == null)
             {
@@ -228,7 +228,7 @@ namespace Main
         private void btnLog_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
-            btnLog.BackColor = ColorTranslator.FromHtml("#555A55");
+            btnLog.BackColor = ColorTranslator.FromHtml("#56aeff");
 
             if (log == null)
             {
@@ -252,7 +252,7 @@ namespace Main
         private void btnSettings_Click_1(object sender, EventArgs e)
         {
             ResetButtonColors();
-            btnSettings.BackColor = ColorTranslator.FromHtml("#555A55");
+            btnSettings.BackColor = ColorTranslator.FromHtml("#56aeff");
 
             if (settings == null)
             {
