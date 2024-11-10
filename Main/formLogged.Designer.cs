@@ -28,58 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.dgvAttendance = new System.Windows.Forms.DataGridView();
-            this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
-            this.lbName = new System.Windows.Forms.Label();
-            this.lbCourse = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.roundedPanel1 = new RoundedPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
+            this.lbCourse = new System.Windows.Forms.Label();
+            this.lbName = new System.Windows.Forms.Label();
+            this.roundedPanel2 = new RoundedPanel();
+            this.roundedPanel3 = new RoundedPanel();
+            this.roundedPanel4 = new RoundedPanel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
+            this.roundedPanel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.dgvAttendance);
-            this.panel1.Location = new System.Drawing.Point(490, 83);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1056, 623);
-            this.panel1.TabIndex = 18;
             // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(90)))), ((int)(((byte)(85)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(25, 25);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1055, 88);
+            this.panel2.Size = new System.Drawing.Size(580, 56);
             this.panel2.TabIndex = 3;
             // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Location = new System.Drawing.Point(32, 23);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.label10.Location = new System.Drawing.Point(67, 10);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(153, 31);
+            this.label10.Size = new System.Drawing.Size(163, 34);
             this.label10.TabIndex = 5;
             this.label10.Text = "User\'s Log";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -91,130 +80,155 @@
             this.dgvAttendance.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAttendance.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvAttendance.Location = new System.Drawing.Point(0, 85);
-            this.dgvAttendance.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvAttendance.Location = new System.Drawing.Point(25, 82);
             this.dgvAttendance.Name = "dgvAttendance";
             this.dgvAttendance.ReadOnly = true;
             this.dgvAttendance.RowHeadersWidth = 51;
-            this.dgvAttendance.Size = new System.Drawing.Size(1056, 538);
+            this.dgvAttendance.Size = new System.Drawing.Size(580, 267);
             this.dgvAttendance.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
+            this.panel3.Controls.Add(this.roundedPanel4);
+            this.panel3.Controls.Add(this.roundedPanel1);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1162, 707);
+            this.panel3.TabIndex = 23;
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
+            this.roundedPanel1.BorderRadius = 30;
+            this.roundedPanel1.Controls.Add(this.label1);
+            this.roundedPanel1.Controls.Add(this.pictureBoxPhoto);
+            this.roundedPanel1.Controls.Add(this.lbCourse);
+            this.roundedPanel1.Controls.Add(this.lbName);
+            this.roundedPanel1.Controls.Add(this.roundedPanel2);
+            this.roundedPanel1.Controls.Add(this.roundedPanel3);
+            this.roundedPanel1.Location = new System.Drawing.Point(28, 29);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(311, 585);
+            this.roundedPanel1.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(74, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 34);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "WELCOME!!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBoxPhoto
             // 
             this.pictureBoxPhoto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBoxPhoto.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBoxPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxPhoto.Location = new System.Drawing.Point(36, 124);
-            this.pictureBoxPhoto.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxPhoto.Location = new System.Drawing.Point(28, 97);
             this.pictureBoxPhoto.Name = "pictureBoxPhoto";
-            this.pictureBoxPhoto.Size = new System.Drawing.Size(382, 353);
+            this.pictureBoxPhoto.Size = new System.Drawing.Size(254, 264);
             this.pictureBoxPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxPhoto.TabIndex = 19;
+            this.pictureBoxPhoto.TabIndex = 23;
             this.pictureBoxPhoto.TabStop = false;
-            // 
-            // lbName
-            // 
-            this.lbName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbName.AutoSize = true;
-            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbName.Location = new System.Drawing.Point(105, 498);
-            this.lbName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(215, 36);
-            this.lbName.TabIndex = 6;
-            this.lbName.Text = "Student Name";
-            this.lbName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbCourse
             // 
             this.lbCourse.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbCourse.AutoSize = true;
-            this.lbCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCourse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbCourse.Location = new System.Drawing.Point(151, 542);
-            this.lbCourse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCourse.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCourse.ForeColor = System.Drawing.Color.White;
+            this.lbCourse.Location = new System.Drawing.Point(122, 463);
             this.lbCourse.Name = "lbCourse";
-            this.lbCourse.Size = new System.Drawing.Size(135, 31);
-            this.lbCourse.TabIndex = 20;
+            this.lbCourse.Size = new System.Drawing.Size(67, 20);
+            this.lbCourse.TabIndex = 24;
             this.lbCourse.Text = "BSCS 3B";
             this.lbCourse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbCourse.Click += new System.EventHandler(this.lbCourse_Click);
             // 
-            // label1
+            // lbName
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(92, 60);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 46);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "WELCOME!!";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.ForeColor = System.Drawing.Color.White;
+            this.lbName.Location = new System.Drawing.Point(93, 387);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(122, 20);
+            this.lbName.TabIndex = 22;
+            this.lbName.Text = "Student Name";
+            this.lbName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // groupBox2
+            // roundedPanel2
             // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.pictureBoxPhoto);
-            this.groupBox2.Controls.Add(this.lbCourse);
-            this.groupBox2.Controls.Add(this.lbName);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(11, 75);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(453, 631);
-            this.groupBox2.TabIndex = 22;
-            this.groupBox2.TabStop = false;
+            this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
+            this.roundedPanel2.BorderRadius = 30;
+            this.roundedPanel2.Location = new System.Drawing.Point(60, 379);
+            this.roundedPanel2.Name = "roundedPanel2";
+            this.roundedPanel2.Size = new System.Drawing.Size(192, 39);
+            this.roundedPanel2.TabIndex = 26;
             // 
-            // panel3
+            // roundedPanel3
             // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.panel3.Controls.Add(this.groupBox2);
-            this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1550, 870);
-            this.panel3.TabIndex = 23;
+            this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
+            this.roundedPanel3.BorderRadius = 30;
+            this.roundedPanel3.Location = new System.Drawing.Point(60, 455);
+            this.roundedPanel3.Name = "roundedPanel3";
+            this.roundedPanel3.Size = new System.Drawing.Size(192, 39);
+            this.roundedPanel3.TabIndex = 27;
+            // 
+            // roundedPanel4
+            // 
+            this.roundedPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
+            this.roundedPanel4.BorderRadius = 30;
+            this.roundedPanel4.Controls.Add(this.dgvAttendance);
+            this.roundedPanel4.Controls.Add(this.panel2);
+            this.roundedPanel4.Location = new System.Drawing.Point(383, 29);
+            this.roundedPanel4.Name = "roundedPanel4";
+            this.roundedPanel4.Size = new System.Drawing.Size(629, 377);
+            this.roundedPanel4.TabIndex = 5;
             // 
             // formLogged
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1875, 1008);
+            this.ClientSize = new System.Drawing.Size(1040, 640);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formLogged";
             this.Text = "formLogged";
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.roundedPanel1.ResumeLayout(false);
+            this.roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).EndInit();
+            this.roundedPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dgvAttendance;
-        private System.Windows.Forms.PictureBox pictureBoxPhoto;
-        private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Label lbCourse;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel3;
+        private RoundedPanel roundedPanel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBoxPhoto;
+        private System.Windows.Forms.Label lbCourse;
+        private System.Windows.Forms.Label lbName;
+        private RoundedPanel roundedPanel2;
+        private RoundedPanel roundedPanel3;
+        private RoundedPanel roundedPanel4;
     }
 }

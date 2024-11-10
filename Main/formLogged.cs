@@ -109,5 +109,10 @@ namespace Main
         private void label10_Click(object sender, EventArgs e)
         {
         }
+
+        private void lbCourse_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
