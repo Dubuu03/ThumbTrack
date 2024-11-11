@@ -77,6 +77,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
             this.roundedPanel3.SuspendLayout();
@@ -138,6 +139,7 @@
             this.roundedPanel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.roundedPanel4.BorderRadius = 30;
+            this.roundedPanel4.Controls.Add(this.label6);
             this.roundedPanel4.Controls.Add(this.label4);
             this.roundedPanel4.Controls.Add(this.label3);
             this.roundedPanel4.Controls.Add(this.label2);
@@ -162,7 +164,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Qualy", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(32, 260);
+            this.label4.Location = new System.Drawing.Point(32, 222);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 22);
@@ -175,7 +177,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Qualy", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(403, 260);
+            this.label3.Location = new System.Drawing.Point(403, 222);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 22);
@@ -188,7 +190,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Qualy", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(403, 54);
+            this.label2.Location = new System.Drawing.Point(403, 35);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 22);
@@ -201,7 +203,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Qualy", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(32, 54);
+            this.label1.Location = new System.Drawing.Point(32, 35);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 22);
@@ -215,7 +217,7 @@
             this.txtAmInStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAmInStart.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmInStart.ForeColor = System.Drawing.Color.White;
-            this.txtAmInStart.Location = new System.Drawing.Point(36, 95);
+            this.txtAmInStart.Location = new System.Drawing.Point(36, 76);
             this.txtAmInStart.Margin = new System.Windows.Forms.Padding(4);
             this.txtAmInStart.Multiline = true;
             this.txtAmInStart.Name = "txtAmInStart";
@@ -230,7 +232,7 @@
             this.txtAmOutStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAmOutStart.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmOutStart.ForeColor = System.Drawing.Color.White;
-            this.txtAmOutStart.Location = new System.Drawing.Point(407, 95);
+            this.txtAmOutStart.Location = new System.Drawing.Point(407, 76);
             this.txtAmOutStart.Margin = new System.Windows.Forms.Padding(4);
             this.txtAmOutStart.Multiline = true;
             this.txtAmOutStart.Name = "txtAmOutStart";
@@ -245,7 +247,7 @@
             this.txtAmInEnd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAmInEnd.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmInEnd.ForeColor = System.Drawing.Color.White;
-            this.txtAmInEnd.Location = new System.Drawing.Point(36, 156);
+            this.txtAmInEnd.Location = new System.Drawing.Point(36, 137);
             this.txtAmInEnd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAmInEnd.Multiline = true;
             this.txtAmInEnd.Name = "txtAmInEnd";
@@ -260,7 +262,7 @@
             this.txtAmOutEnd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAmOutEnd.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmOutEnd.ForeColor = System.Drawing.Color.White;
-            this.txtAmOutEnd.Location = new System.Drawing.Point(407, 156);
+            this.txtAmOutEnd.Location = new System.Drawing.Point(407, 137);
             this.txtAmOutEnd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAmOutEnd.Multiline = true;
             this.txtAmOutEnd.Name = "txtAmOutEnd";
@@ -275,7 +277,7 @@
             this.txtPmInStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPmInStart.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPmInStart.ForeColor = System.Drawing.Color.White;
-            this.txtPmInStart.Location = new System.Drawing.Point(36, 298);
+            this.txtPmInStart.Location = new System.Drawing.Point(36, 260);
             this.txtPmInStart.Margin = new System.Windows.Forms.Padding(4);
             this.txtPmInStart.Multiline = true;
             this.txtPmInStart.Name = "txtPmInStart";
@@ -290,7 +292,7 @@
             this.txtPmOutStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPmOutStart.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPmOutStart.ForeColor = System.Drawing.Color.White;
-            this.txtPmOutStart.Location = new System.Drawing.Point(407, 298);
+            this.txtPmOutStart.Location = new System.Drawing.Point(407, 260);
             this.txtPmOutStart.Margin = new System.Windows.Forms.Padding(4);
             this.txtPmOutStart.Multiline = true;
             this.txtPmOutStart.Name = "txtPmOutStart";
@@ -305,7 +307,7 @@
             this.txtPmInEnd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPmInEnd.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPmInEnd.ForeColor = System.Drawing.Color.White;
-            this.txtPmInEnd.Location = new System.Drawing.Point(36, 356);
+            this.txtPmInEnd.Location = new System.Drawing.Point(36, 318);
             this.txtPmInEnd.Margin = new System.Windows.Forms.Padding(4);
             this.txtPmInEnd.Multiline = true;
             this.txtPmInEnd.Name = "txtPmInEnd";
@@ -320,7 +322,7 @@
             this.txtPmOutEnd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPmOutEnd.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPmOutEnd.ForeColor = System.Drawing.Color.White;
-            this.txtPmOutEnd.Location = new System.Drawing.Point(407, 356);
+            this.txtPmOutEnd.Location = new System.Drawing.Point(407, 318);
             this.txtPmOutEnd.Margin = new System.Windows.Forms.Padding(4);
             this.txtPmOutEnd.Multiline = true;
             this.txtPmOutEnd.Name = "txtPmOutEnd";
@@ -767,6 +769,19 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "Today\'s Event:";
             // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Qualy", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(32, 395);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(259, 22);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Note: Use 24 Hour Format";
+            // 
             // formSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -853,5 +868,6 @@
         private RoundedPanel roundedPanel7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
