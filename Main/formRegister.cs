@@ -44,7 +44,7 @@ namespace Main
             txtPassword.PasswordChar = '*';
 
             pictureBoxPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxPhoto.Width = 265;
+            pictureBoxPhoto.Width = 287;
             pictureBoxPhoto.Height = 280;
 
             InitializeFingerprintCapture();
@@ -263,7 +263,7 @@ namespace Main
             {
                 StopFingerprintCapture();
                 statusText.Clear();
-                SetStatus("Press start scan to begin fingerprint enrollment.");
+                SetStatus("Press start scan to begin.");
                 isScannerRunning = false;
                 btnStart.Text = "START SCAN";
                 timer1.Dispose();

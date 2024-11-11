@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btnExport = new System.Windows.Forms.Button();
             this.roundedPanel2 = new RoundedPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.roundedPanel5 = new RoundedPanel();
             this.lbToAM = new System.Windows.Forms.Label();
@@ -47,23 +49,28 @@
             this.roundedPanel7 = new RoundedPanel();
             this.lbToPM = new System.Windows.Forms.Label();
             this.roundedPanel1 = new RoundedPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.roundedPanel16 = new RoundedPanel();
+            this.lbMMA = new System.Windows.Forms.Label();
             this.roundedPanel17 = new RoundedPanel();
             this.label13 = new System.Windows.Forms.Label();
             this.roundedPanel14 = new RoundedPanel();
+            this.lbLIS = new System.Windows.Forms.Label();
             this.roundedPanel15 = new RoundedPanel();
             this.label12 = new System.Windows.Forms.Label();
-            this.roundedPanel11 = new RoundedPanel();
-            this.label10 = new System.Windows.Forms.Label();
             this.roundedPanel12 = new RoundedPanel();
+            this.lbIT = new System.Windows.Forms.Label();
             this.roundedPanel13 = new RoundedPanel();
             this.label11 = new System.Windows.Forms.Label();
             this.roundedPanel10 = new RoundedPanel();
+            this.lbIS = new System.Windows.Forms.Label();
+            this.roundedPanel11 = new RoundedPanel();
+            this.label10 = new System.Windows.Forms.Label();
             this.roundedPanel8 = new RoundedPanel();
+            this.lbCS = new System.Windows.Forms.Label();
             this.roundedPanel9 = new RoundedPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnExport = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
@@ -76,9 +83,10 @@
             this.roundedPanel17.SuspendLayout();
             this.roundedPanel14.SuspendLayout();
             this.roundedPanel15.SuspendLayout();
-            this.roundedPanel11.SuspendLayout();
             this.roundedPanel12.SuspendLayout();
             this.roundedPanel13.SuspendLayout();
+            this.roundedPanel10.SuspendLayout();
+            this.roundedPanel11.SuspendLayout();
             this.roundedPanel8.SuspendLayout();
             this.roundedPanel9.SuspendLayout();
             this.SuspendLayout();
@@ -87,20 +95,37 @@
             // 
             this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel8.Controls.Add(this.btnExport);
             this.panel8.Controls.Add(this.roundedPanel2);
             this.panel8.Controls.Add(this.roundedPanel1);
             this.panel8.Location = new System.Drawing.Point(-1, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1549, 870);
+            this.panel8.Size = new System.Drawing.Size(1162, 707);
             this.panel8.TabIndex = 8;
+            // 
+            // btnExport
+            // 
+            this.btnExport.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
+            this.btnExport.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExport.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport.ForeColor = System.Drawing.Color.White;
+            this.btnExport.Location = new System.Drawing.Point(566, 654);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(539, 45);
+            this.btnExport.TabIndex = 16;
+            this.btnExport.Text = "Export Today\'s Record";
+            this.btnExport.UseVisualStyleBackColor = false;
             // 
             // roundedPanel2
             // 
             this.roundedPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.roundedPanel2.BorderRadius = 30;
+            this.roundedPanel2.Controls.Add(this.panel2);
             this.roundedPanel2.Controls.Add(this.label8);
             this.roundedPanel2.Controls.Add(this.roundedPanel5);
             this.roundedPanel2.Controls.Add(this.label4);
@@ -113,11 +138,18 @@
             this.roundedPanel2.Controls.Add(this.roundedPanel6);
             this.roundedPanel2.Controls.Add(this.roundedPanel7);
             this.roundedPanel2.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedPanel2.Location = new System.Drawing.Point(725, 69);
-            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel2.Location = new System.Drawing.Point(541, 79);
             this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(719, 646);
+            this.roundedPanel2.Size = new System.Drawing.Size(589, 549);
             this.roundedPanel2.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(2, 71);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(586, 1);
+            this.panel2.TabIndex = 10;
             // 
             // label8
             // 
@@ -125,10 +157,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(40, 139);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(45, 113);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(322, 23);
+            this.label8.Size = new System.Drawing.Size(258, 20);
             this.label8.TabIndex = 9;
             this.label8.Text = "number of registered students";
             // 
@@ -138,10 +169,9 @@
             this.roundedPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel5.BorderRadius = 30;
             this.roundedPanel5.Controls.Add(this.lbToAM);
-            this.roundedPanel5.Location = new System.Drawing.Point(381, 367);
-            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel5.Location = new System.Drawing.Point(301, 298);
             this.roundedPanel5.Name = "roundedPanel5";
-            this.roundedPanel5.Size = new System.Drawing.Size(283, 92);
+            this.roundedPanel5.Size = new System.Drawing.Size(234, 75);
             this.roundedPanel5.TabIndex = 8;
             // 
             // lbToAM
@@ -150,10 +180,9 @@
             this.lbToAM.AutoSize = true;
             this.lbToAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbToAM.ForeColor = System.Drawing.Color.White;
-            this.lbToAM.Location = new System.Drawing.Point(120, 18);
-            this.lbToAM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbToAM.Location = new System.Drawing.Point(101, 15);
             this.lbToAM.Name = "lbToAM";
-            this.lbToAM.Size = new System.Drawing.Size(47, 52);
+            this.lbToAM.Size = new System.Drawing.Size(37, 39);
             this.lbToAM.TabIndex = 4;
             this.lbToAM.Text = "?";
             this.lbToAM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -164,10 +193,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(417, 329);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(328, 267);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 23);
+            this.label4.Size = new System.Drawing.Size(115, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "am: time out";
             // 
@@ -177,10 +205,9 @@
             this.roundedPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel4.BorderRadius = 30;
             this.roundedPanel4.Controls.Add(this.lbTiAM);
-            this.roundedPanel4.Location = new System.Drawing.Point(45, 367);
-            this.roundedPanel4.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel4.Location = new System.Drawing.Point(49, 298);
             this.roundedPanel4.Name = "roundedPanel4";
-            this.roundedPanel4.Size = new System.Drawing.Size(283, 92);
+            this.roundedPanel4.Size = new System.Drawing.Size(234, 75);
             this.roundedPanel4.TabIndex = 7;
             // 
             // lbTiAM
@@ -189,10 +216,9 @@
             this.lbTiAM.AutoSize = true;
             this.lbTiAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTiAM.ForeColor = System.Drawing.Color.White;
-            this.lbTiAM.Location = new System.Drawing.Point(116, 18);
-            this.lbTiAM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTiAM.Location = new System.Drawing.Point(98, 15);
             this.lbTiAM.Name = "lbTiAM";
-            this.lbTiAM.Size = new System.Drawing.Size(47, 52);
+            this.lbTiAM.Size = new System.Drawing.Size(37, 39);
             this.lbTiAM.TabIndex = 2;
             this.lbTiAM.Text = "?";
             this.lbTiAM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -203,10 +229,9 @@
             this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel3.BorderRadius = 30;
             this.roundedPanel3.Controls.Add(this.lbStudent);
-            this.roundedPanel3.Location = new System.Drawing.Point(45, 188);
-            this.roundedPanel3.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel3.Location = new System.Drawing.Point(49, 153);
             this.roundedPanel3.Name = "roundedPanel3";
-            this.roundedPanel3.Size = new System.Drawing.Size(619, 92);
+            this.roundedPanel3.Size = new System.Drawing.Size(486, 75);
             this.roundedPanel3.TabIndex = 6;
             // 
             // lbStudent
@@ -215,10 +240,9 @@
             this.lbStudent.AutoSize = true;
             this.lbStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbStudent.ForeColor = System.Drawing.Color.White;
-            this.lbStudent.Location = new System.Drawing.Point(289, 23);
-            this.lbStudent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbStudent.Location = new System.Drawing.Point(228, 19);
             this.lbStudent.Name = "lbStudent";
-            this.lbStudent.Size = new System.Drawing.Size(47, 52);
+            this.lbStudent.Size = new System.Drawing.Size(37, 39);
             this.lbStudent.TabIndex = 1;
             this.lbStudent.Text = "?";
             this.lbStudent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -229,10 +253,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(45, 329);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(49, 267);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 23);
+            this.label3.Size = new System.Drawing.Size(98, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "am: time in";
             // 
@@ -242,10 +265,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(417, 474);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(328, 385);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 23);
+            this.label5.Size = new System.Drawing.Size(112, 20);
             this.label5.TabIndex = 1;
             this.label5.Text = "pm: time out";
             // 
@@ -255,10 +277,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.label7.Location = new System.Drawing.Point(61, 33);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(57, 27);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(305, 43);
+            this.label7.Size = new System.Drawing.Size(243, 34);
             this.label7.TabIndex = 1;
             this.label7.Text = "Total Students";
             // 
@@ -268,10 +289,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(45, 474);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(49, 385);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 23);
+            this.label6.Size = new System.Drawing.Size(95, 20);
             this.label6.TabIndex = 1;
             this.label6.Text = "pm: time in";
             // 
@@ -281,10 +301,9 @@
             this.roundedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel6.BorderRadius = 30;
             this.roundedPanel6.Controls.Add(this.lbTiPM);
-            this.roundedPanel6.Location = new System.Drawing.Point(52, 511);
-            this.roundedPanel6.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel6.Location = new System.Drawing.Point(54, 415);
             this.roundedPanel6.Name = "roundedPanel6";
-            this.roundedPanel6.Size = new System.Drawing.Size(276, 92);
+            this.roundedPanel6.Size = new System.Drawing.Size(229, 75);
             this.roundedPanel6.TabIndex = 8;
             // 
             // lbTiPM
@@ -293,10 +312,9 @@
             this.lbTiPM.AutoSize = true;
             this.lbTiPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTiPM.ForeColor = System.Drawing.Color.White;
-            this.lbTiPM.Location = new System.Drawing.Point(112, 23);
-            this.lbTiPM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTiPM.Location = new System.Drawing.Point(95, 19);
             this.lbTiPM.Name = "lbTiPM";
-            this.lbTiPM.Size = new System.Drawing.Size(47, 52);
+            this.lbTiPM.Size = new System.Drawing.Size(37, 39);
             this.lbTiPM.TabIndex = 3;
             this.lbTiPM.Text = "?";
             this.lbTiPM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -307,10 +325,9 @@
             this.roundedPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel7.BorderRadius = 30;
             this.roundedPanel7.Controls.Add(this.lbToPM);
-            this.roundedPanel7.Location = new System.Drawing.Point(381, 511);
-            this.roundedPanel7.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel7.Location = new System.Drawing.Point(301, 415);
             this.roundedPanel7.Name = "roundedPanel7";
-            this.roundedPanel7.Size = new System.Drawing.Size(276, 92);
+            this.roundedPanel7.Size = new System.Drawing.Size(229, 75);
             this.roundedPanel7.TabIndex = 8;
             // 
             // lbToPM
@@ -319,10 +336,9 @@
             this.lbToPM.AutoSize = true;
             this.lbToPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbToPM.ForeColor = System.Drawing.Color.White;
-            this.lbToPM.Location = new System.Drawing.Point(123, 23);
-            this.lbToPM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbToPM.Location = new System.Drawing.Point(103, 19);
             this.lbToPM.Name = "lbToPM";
-            this.lbToPM.Size = new System.Drawing.Size(47, 52);
+            this.lbToPM.Size = new System.Drawing.Size(37, 39);
             this.lbToPM.TabIndex = 5;
             this.lbToPM.Text = "?";
             this.lbToPM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -332,30 +348,50 @@
             this.roundedPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.roundedPanel1.BorderRadius = 30;
+            this.roundedPanel1.Controls.Add(this.panel1);
             this.roundedPanel1.Controls.Add(this.roundedPanel16);
             this.roundedPanel1.Controls.Add(this.roundedPanel14);
-            this.roundedPanel1.Controls.Add(this.roundedPanel11);
             this.roundedPanel1.Controls.Add(this.roundedPanel12);
             this.roundedPanel1.Controls.Add(this.roundedPanel10);
             this.roundedPanel1.Controls.Add(this.roundedPanel8);
             this.roundedPanel1.Controls.Add(this.label2);
-            this.roundedPanel1.Location = new System.Drawing.Point(100, 69);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel1.Location = new System.Drawing.Point(26, 79);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(592, 750);
+            this.roundedPanel1.Size = new System.Drawing.Size(482, 620);
             this.roundedPanel1.TabIndex = 8;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(0, 71);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(481, 1);
+            this.panel1.TabIndex = 6;
             // 
             // roundedPanel16
             // 
             this.roundedPanel16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel16.BorderRadius = 30;
+            this.roundedPanel16.Controls.Add(this.lbMMA);
             this.roundedPanel16.Controls.Add(this.roundedPanel17);
-            this.roundedPanel16.Location = new System.Drawing.Point(44, 625);
-            this.roundedPanel16.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel16.Location = new System.Drawing.Point(35, 517);
             this.roundedPanel16.Name = "roundedPanel16";
-            this.roundedPanel16.Size = new System.Drawing.Size(503, 102);
+            this.roundedPanel16.Size = new System.Drawing.Size(412, 85);
             this.roundedPanel16.TabIndex = 5;
+            // 
+            // lbMMA
+            // 
+            this.lbMMA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbMMA.AutoSize = true;
+            this.lbMMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMMA.ForeColor = System.Drawing.Color.White;
+            this.lbMMA.Location = new System.Drawing.Point(188, 43);
+            this.lbMMA.Name = "lbMMA";
+            this.lbMMA.Size = new System.Drawing.Size(37, 39);
+            this.lbMMA.TabIndex = 6;
+            this.lbMMA.Text = "?";
+            this.lbMMA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // roundedPanel17
             // 
@@ -363,10 +399,9 @@
             this.roundedPanel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.roundedPanel17.BorderRadius = 30;
             this.roundedPanel17.Controls.Add(this.label13);
-            this.roundedPanel17.Location = new System.Drawing.Point(28, 0);
-            this.roundedPanel17.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel17.Location = new System.Drawing.Point(39, 5);
             this.roundedPanel17.Name = "roundedPanel17";
-            this.roundedPanel17.Size = new System.Drawing.Size(448, 39);
+            this.roundedPanel17.Size = new System.Drawing.Size(336, 32);
             this.roundedPanel17.TabIndex = 0;
             // 
             // label13
@@ -375,10 +410,9 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(64, 6);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(48, 5);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(302, 23);
+            this.label13.Size = new System.Drawing.Size(242, 20);
             this.label13.TabIndex = 10;
             this.label13.Text = "Bachelor in Multimedia Arts";
             // 
@@ -387,12 +421,25 @@
             this.roundedPanel14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel14.BorderRadius = 30;
+            this.roundedPanel14.Controls.Add(this.lbLIS);
             this.roundedPanel14.Controls.Add(this.roundedPanel15);
-            this.roundedPanel14.Location = new System.Drawing.Point(44, 507);
-            this.roundedPanel14.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel14.Location = new System.Drawing.Point(35, 414);
             this.roundedPanel14.Name = "roundedPanel14";
-            this.roundedPanel14.Size = new System.Drawing.Size(503, 102);
+            this.roundedPanel14.Size = new System.Drawing.Size(412, 85);
             this.roundedPanel14.TabIndex = 4;
+            // 
+            // lbLIS
+            // 
+            this.lbLIS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbLIS.AutoSize = true;
+            this.lbLIS.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLIS.ForeColor = System.Drawing.Color.White;
+            this.lbLIS.Location = new System.Drawing.Point(188, 45);
+            this.lbLIS.Name = "lbLIS";
+            this.lbLIS.Size = new System.Drawing.Size(37, 39);
+            this.lbLIS.TabIndex = 5;
+            this.lbLIS.Text = "?";
+            this.lbLIS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // roundedPanel15
             // 
@@ -400,10 +447,9 @@
             this.roundedPanel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.roundedPanel15.BorderRadius = 30;
             this.roundedPanel15.Controls.Add(this.label12);
-            this.roundedPanel15.Location = new System.Drawing.Point(28, 0);
-            this.roundedPanel15.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel15.Location = new System.Drawing.Point(39, 5);
             this.roundedPanel15.Name = "roundedPanel15";
-            this.roundedPanel15.Size = new System.Drawing.Size(448, 39);
+            this.roundedPanel15.Size = new System.Drawing.Size(336, 32);
             this.roundedPanel15.TabIndex = 0;
             // 
             // label12
@@ -412,49 +458,36 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(77, 6);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(58, 5);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(279, 23);
+            this.label12.Size = new System.Drawing.Size(224, 20);
             this.label12.TabIndex = 10;
             this.label12.Text = "B Library and Info Science";
-            // 
-            // roundedPanel11
-            // 
-            this.roundedPanel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.roundedPanel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.roundedPanel11.BorderRadius = 30;
-            this.roundedPanel11.Controls.Add(this.label10);
-            this.roundedPanel11.Location = new System.Drawing.Point(72, 265);
-            this.roundedPanel11.Margin = new System.Windows.Forms.Padding(4);
-            this.roundedPanel11.Name = "roundedPanel11";
-            this.roundedPanel11.Size = new System.Drawing.Size(448, 39);
-            this.roundedPanel11.TabIndex = 0;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(100, 6);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(240, 23);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "BS Information System";
             // 
             // roundedPanel12
             // 
             this.roundedPanel12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel12.BorderRadius = 30;
+            this.roundedPanel12.Controls.Add(this.lbIT);
             this.roundedPanel12.Controls.Add(this.roundedPanel13);
-            this.roundedPanel12.Location = new System.Drawing.Point(44, 389);
-            this.roundedPanel12.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel12.Location = new System.Drawing.Point(35, 308);
             this.roundedPanel12.Name = "roundedPanel12";
-            this.roundedPanel12.Size = new System.Drawing.Size(503, 102);
+            this.roundedPanel12.Size = new System.Drawing.Size(412, 85);
             this.roundedPanel12.TabIndex = 3;
+            // 
+            // lbIT
+            // 
+            this.lbIT.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbIT.AutoSize = true;
+            this.lbIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIT.ForeColor = System.Drawing.Color.White;
+            this.lbIT.Location = new System.Drawing.Point(188, 44);
+            this.lbIT.Name = "lbIT";
+            this.lbIT.Size = new System.Drawing.Size(37, 39);
+            this.lbIT.TabIndex = 4;
+            this.lbIT.Text = "?";
+            this.lbIT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // roundedPanel13
             // 
@@ -462,10 +495,9 @@
             this.roundedPanel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.roundedPanel13.BorderRadius = 30;
             this.roundedPanel13.Controls.Add(this.label11);
-            this.roundedPanel13.Location = new System.Drawing.Point(28, 0);
-            this.roundedPanel13.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel13.Location = new System.Drawing.Point(39, 5);
             this.roundedPanel13.Name = "roundedPanel13";
-            this.roundedPanel13.Size = new System.Drawing.Size(448, 39);
+            this.roundedPanel13.Size = new System.Drawing.Size(336, 32);
             this.roundedPanel13.TabIndex = 0;
             // 
             // label11
@@ -474,10 +506,9 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(67, 6);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(50, 5);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(299, 23);
+            this.label11.Size = new System.Drawing.Size(239, 20);
             this.label11.TabIndex = 10;
             this.label11.Text = "BS Information Technology";
             // 
@@ -486,23 +517,73 @@
             this.roundedPanel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel10.BorderRadius = 30;
-            this.roundedPanel10.Location = new System.Drawing.Point(44, 266);
-            this.roundedPanel10.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel10.Controls.Add(this.lbIS);
+            this.roundedPanel10.Controls.Add(this.roundedPanel11);
+            this.roundedPanel10.Location = new System.Drawing.Point(35, 204);
             this.roundedPanel10.Name = "roundedPanel10";
-            this.roundedPanel10.Size = new System.Drawing.Size(503, 102);
+            this.roundedPanel10.Size = new System.Drawing.Size(412, 85);
             this.roundedPanel10.TabIndex = 2;
+            // 
+            // lbIS
+            // 
+            this.lbIS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbIS.AutoSize = true;
+            this.lbIS.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIS.ForeColor = System.Drawing.Color.White;
+            this.lbIS.Location = new System.Drawing.Point(188, 44);
+            this.lbIS.Name = "lbIS";
+            this.lbIS.Size = new System.Drawing.Size(37, 39);
+            this.lbIS.TabIndex = 3;
+            this.lbIS.Text = "?";
+            this.lbIS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // roundedPanel11
+            // 
+            this.roundedPanel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.roundedPanel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.roundedPanel11.BorderRadius = 30;
+            this.roundedPanel11.Controls.Add(this.label10);
+            this.roundedPanel11.Location = new System.Drawing.Point(39, 6);
+            this.roundedPanel11.Name = "roundedPanel11";
+            this.roundedPanel11.Size = new System.Drawing.Size(336, 32);
+            this.roundedPanel11.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(75, 5);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(192, 20);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "BS Information System";
             // 
             // roundedPanel8
             // 
             this.roundedPanel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel8.BorderRadius = 30;
+            this.roundedPanel8.Controls.Add(this.lbCS);
             this.roundedPanel8.Controls.Add(this.roundedPanel9);
-            this.roundedPanel8.Location = new System.Drawing.Point(44, 144);
-            this.roundedPanel8.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel8.Location = new System.Drawing.Point(35, 96);
             this.roundedPanel8.Name = "roundedPanel8";
-            this.roundedPanel8.Size = new System.Drawing.Size(503, 102);
+            this.roundedPanel8.Size = new System.Drawing.Size(412, 85);
             this.roundedPanel8.TabIndex = 1;
+            // 
+            // lbCS
+            // 
+            this.lbCS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbCS.AutoSize = true;
+            this.lbCS.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCS.ForeColor = System.Drawing.Color.White;
+            this.lbCS.Location = new System.Drawing.Point(188, 45);
+            this.lbCS.Name = "lbCS";
+            this.lbCS.Size = new System.Drawing.Size(37, 39);
+            this.lbCS.TabIndex = 2;
+            this.lbCS.Text = "?";
+            this.lbCS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // roundedPanel9
             // 
@@ -510,10 +591,9 @@
             this.roundedPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.roundedPanel9.BorderRadius = 30;
             this.roundedPanel9.Controls.Add(this.label9);
-            this.roundedPanel9.Location = new System.Drawing.Point(28, 0);
-            this.roundedPanel9.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedPanel9.Location = new System.Drawing.Point(39, 6);
             this.roundedPanel9.Name = "roundedPanel9";
-            this.roundedPanel9.Size = new System.Drawing.Size(448, 39);
+            this.roundedPanel9.Size = new System.Drawing.Size(336, 32);
             this.roundedPanel9.TabIndex = 0;
             // 
             // label9
@@ -522,10 +602,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(109, 6);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(82, 5);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(221, 23);
+            this.label9.Size = new System.Drawing.Size(177, 20);
             this.label9.TabIndex = 10;
             this.label9.Text = "BS Computer Science";
             // 
@@ -535,38 +614,20 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(57, 33);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(29, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(240, 43);
+            this.label2.Size = new System.Drawing.Size(191, 34);
             this.label2.TabIndex = 0;
             this.label2.Text = "Total Login";
             // 
-            // btnExport
-            // 
-            this.btnExport.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
-            this.btnExport.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
-            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExport.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExport.ForeColor = System.Drawing.Color.White;
-            this.btnExport.Location = new System.Drawing.Point(725, 764);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(4);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(719, 55);
-            this.btnExport.TabIndex = 16;
-            this.btnExport.Text = "Export Today\'s Record";
-            this.btnExport.UseVisualStyleBackColor = false;
-            // 
             // formHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1848, 970);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.panel8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "formHome";
             this.Text = "formHome";
             this.Load += new System.EventHandler(this.formHome_Load);
@@ -586,17 +647,23 @@
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
             this.roundedPanel16.ResumeLayout(false);
+            this.roundedPanel16.PerformLayout();
             this.roundedPanel17.ResumeLayout(false);
             this.roundedPanel17.PerformLayout();
             this.roundedPanel14.ResumeLayout(false);
+            this.roundedPanel14.PerformLayout();
             this.roundedPanel15.ResumeLayout(false);
             this.roundedPanel15.PerformLayout();
-            this.roundedPanel11.ResumeLayout(false);
-            this.roundedPanel11.PerformLayout();
             this.roundedPanel12.ResumeLayout(false);
+            this.roundedPanel12.PerformLayout();
             this.roundedPanel13.ResumeLayout(false);
             this.roundedPanel13.PerformLayout();
+            this.roundedPanel10.ResumeLayout(false);
+            this.roundedPanel10.PerformLayout();
+            this.roundedPanel11.ResumeLayout(false);
+            this.roundedPanel11.PerformLayout();
             this.roundedPanel8.ResumeLayout(false);
+            this.roundedPanel8.PerformLayout();
             this.roundedPanel9.ResumeLayout(false);
             this.roundedPanel9.PerformLayout();
             this.ResumeLayout(false);
@@ -640,5 +707,12 @@
         private System.Windows.Forms.Label label11;
         private RoundedPanel roundedPanel10;
         private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Label lbIT;
+        private System.Windows.Forms.Label lbIS;
+        private System.Windows.Forms.Label lbCS;
+        private System.Windows.Forms.Label lbMMA;
+        private System.Windows.Forms.Label lbLIS;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
@@ -7,11 +8,25 @@ namespace Main
 {
     public partial class formRecords : Form
     {
+        private Dictionary<TextBox, string> placeholders = new Dictionary<TextBox, string>();
+
         public formRecords()
         {
             InitializeComponent();
             this.txtSearchAttendance.TextChanged += new EventHandler(this.txtSearchAttendance_TextChanged);
             this.txtSearchAbsentees.TextChanged += new EventHandler(this.txtSearchAbsentees_TextChanged);
+
+            placeholders.Add(txtSearchAttendance, "Enter Student ID");
+            placeholders.Add(txtSearchAbsentees, "Enter Student ID");
+
+            foreach (var textBox in placeholders.Keys)
+            {
+                textBox.Text = placeholders[textBox];
+                textBox.ForeColor = Color.Gray;
+
+                textBox.Enter += RemovePlaceholder;
+                textBox.Leave += SetPlaceholder;
+            }
         }
 
         private void formRecords_Load(object sender, EventArgs e)
@@ -59,7 +74,7 @@ namespace Main
             dgvAttendance.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
             dgvAttendance.RowsDefaultCellStyle.BackColor = Color.White;
 
-            dgvAttendance.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; 
+            dgvAttendance.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void LoadAbsentees(string searchTerm = "")
@@ -85,21 +100,62 @@ namespace Main
             dgvAbsent.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
             dgvAbsent.RowsDefaultCellStyle.BackColor = Color.White;
 
-            dgvAbsent.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; 
+            dgvAbsent.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void txtSearchAttendance_TextChanged(object sender, EventArgs e)
         {
             string searchTerm = txtSearchAttendance.Text.Trim();
-            LoadAttendanceRecord(searchTerm);
+
+            if (string.IsNullOrWhiteSpace(searchTerm) || searchTerm == placeholders[txtSearchAttendance])
+            {
+                LoadAttendanceRecord(); 
+            }
+            else
+            {
+                LoadAttendanceRecord(searchTerm); 
+            }
         }
 
         private void txtSearchAbsentees_TextChanged(object sender, EventArgs e)
         {
             string searchTerm = txtSearchAbsentees.Text.Trim();
-            LoadAbsentees(searchTerm);
+
+
+            if (string.IsNullOrWhiteSpace(searchTerm) || searchTerm == placeholders[txtSearchAbsentees])
+            {
+                LoadAbsentees(); 
+            }
+            else
+            {
+                LoadAbsentees(searchTerm); 
+            }
         }
 
+        private void SetPlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = placeholders[textBox];
+                textBox.ForeColor = Color.Gray; // Keep placeholder text gray
+            }
+        }
+
+        private void RemovePlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && textBox.Text == placeholders[textBox])
+            {
+                textBox.Text = "";
+                textBox.ForeColor = Color.White; // Regular text color
+            }
+        }
+
+        private void btnExportAttendace_Click(object sender, EventArgs e)
+        {
+
+        }
         private void btnCourse_Click(object sender, EventArgs e)
         {
         }
@@ -108,20 +164,7 @@ namespace Main
         {
 
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dgvAbsent_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void txtSearchAttendance_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
     }
+
 }
+

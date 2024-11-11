@@ -7,11 +7,13 @@ using System.Drawing;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace Main
 {
     public partial class formManage : Form
     {
+        private Dictionary<TextBox, string> placeholders = new Dictionary<TextBox, string>();
         public formManage()
         {
             InitializeComponent();
@@ -19,6 +21,16 @@ namespace Main
             pictureBoxPhoto.Width = 260;
             pictureBoxPhoto.Height = 250;
 
+            placeholders.Add(tbStudentID, "Enter Student ID");
+
+            foreach (var textBox in placeholders.Keys)
+            {
+                textBox.Text = placeholders[textBox];
+                textBox.ForeColor = Color.Gray;
+
+                textBox.Enter += RemovePlaceholder;
+                textBox.Leave += SetPlaceholder;
+            }
 
             SetTextBoxesReadOnly(true);
             DisableActionButtons();
@@ -54,6 +66,10 @@ namespace Main
             {
                 MessageBox.Show("Please enter a valid Student ID.");
                 ResetForm();
+                if (File.Exists(defaultImagePath))
+                {
+                    pictureBoxPhoto.Image = Image.FromFile(defaultImagePath);
+                }
             }
         }
 
@@ -361,25 +377,27 @@ namespace Main
                 btnBrowse.Enabled = false;
             }
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void SetPlaceholder(object sender, EventArgs e)
         {
-
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = placeholders[textBox];
+                textBox.ForeColor = Color.Gray; // Keep placeholder text gray
+            }
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void RemovePlaceholder(object sender, EventArgs e)
         {
-
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && textBox.Text == placeholders[textBox])
+            {
+                textBox.Text = "";
+                textBox.ForeColor = Color.White; // Regular text color
+            }
         }
+ 
 
-        private void roundedPanel2_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void tbStudentID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

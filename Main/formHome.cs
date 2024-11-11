@@ -48,14 +48,7 @@ namespace Main
             lbToPM.Text = timeOutPMCount.ToString();
         }
 
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
 
-        private void lbStudent_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

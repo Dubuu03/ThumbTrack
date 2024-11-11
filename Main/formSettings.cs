@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -9,11 +10,33 @@ namespace Main
 {
     public partial class formSettings : Form
     {
+        private Dictionary<TextBox, string> placeholders = new Dictionary<TextBox, string>();
         public formSettings()
         {
             InitializeComponent();
             LoadTimePeriods();
             GetEventNameForToday();
+
+            placeholders.Add(txtEventName, "Enter Event Name");
+            placeholders.Add(txtAmInStart, "Time Start");
+            placeholders.Add(txtAmInEnd, "Time End");
+            placeholders.Add(txtAmOutStart, "Time Start");
+            placeholders.Add(txtAmOutEnd, "Time End");
+            placeholders.Add(txtPmInStart, "Time Start");
+            placeholders.Add(txtPmInEnd, "Time End");
+            placeholders.Add(txtPmOutStart, "Time Start");
+            placeholders.Add(txtPmOutEnd, "Time End");
+
+            foreach (var textBox in placeholders.Keys)
+            {
+                textBox.Text = placeholders[textBox];
+                textBox.ForeColor = Color.Gray; 
+
+                textBox.Enter += RemovePlaceholder;
+                textBox.Leave += SetPlaceholder;
+                textBox.TextChanged += ChangeTextColor;
+            }
+
         }
 
 
@@ -258,5 +281,42 @@ namespace Main
         {
 
         }
+
+        private void SetPlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = placeholders[textBox];
+                textBox.ForeColor = Color.Gray; // Keep placeholder text gray
+            }
+        }
+
+        private void RemovePlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && textBox.Text == placeholders[textBox])
+            {
+                textBox.Text = "";
+                textBox.ForeColor = SystemColors.WindowText; // Regular text color
+            }
+        }
+
+        private void ChangeTextColor(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && !string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                if (placeholders[textBox] == "Time Start" || placeholders[textBox] == "Time End")
+                {
+                    textBox.ForeColor = Color.White; 
+                }
+                else if (placeholders[textBox] == "Enter Event Name")
+                {
+                    textBox.ForeColor = Color.Black; 
+                }
+            }
+        }
+
     }
 }

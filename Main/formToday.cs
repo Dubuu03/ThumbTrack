@@ -13,6 +13,7 @@ namespace Main
 {
     public partial class formToday : Form
     {
+        private Dictionary<TextBox, string> placeholders = new Dictionary<TextBox, string>();
         public formToday()
         {
             InitializeComponent();
@@ -20,6 +21,18 @@ namespace Main
             this.txtSearchAttendance.TextChanged += new EventHandler(this.txtSearchAttendance_TextChanged);
             timerTime.Start();
 
+
+            placeholders.Add(txtSearchAttendance, "Enter Student ID");
+
+            foreach (var textBox in placeholders.Keys)
+            {
+                textBox.Text = placeholders[textBox];
+                textBox.ForeColor = Color.Gray;
+
+                textBox.Enter += RemovePlaceholder;
+                textBox.Leave += SetPlaceholder;
+                textBox.TextChanged += ChangeTextColor;
+            }
         }
 
         private void formToday_Load(object sender, EventArgs e)
@@ -90,5 +103,38 @@ namespace Main
         {
 
         }
+
+        private void SetPlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = placeholders[textBox];
+                textBox.ForeColor = Color.Gray; // Keep placeholder text gray
+            }
+        }
+
+        private void RemovePlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && textBox.Text == placeholders[textBox])
+            {
+                textBox.Text = "";
+                textBox.ForeColor = SystemColors.WindowText; // Regular text color
+            }
+        }
+
+        private void ChangeTextColor(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && !string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                if (placeholders[textBox] == "Enter Student ID")
+                {
+                    textBox.ForeColor = Color.White;
+                }
+            }
+        }
+
     }
 }
