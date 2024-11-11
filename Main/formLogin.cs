@@ -16,9 +16,9 @@ namespace Main
             InitializeComponent();
             txtPassword.PasswordChar = '*';
 
-            this.pnHead.MouseDown += new MouseEventHandler(this.pnHead_MouseDown);
+        /*    this.pnHead.MouseDown += new MouseEventHandler(this.pnHead_MouseDown);
             this.pnHead.MouseMove += new MouseEventHandler(this.pnHead_MouseMove);
-            this.pnHead.MouseUp += new MouseEventHandler(this.pnHead_MouseUp);
+            this.pnHead.MouseUp += new MouseEventHandler(this.pnHead_MouseUp);*/
         }
 
         public static class UserSession
@@ -29,7 +29,7 @@ namespace Main
         }
 
 
-        private void pnHead_MouseDown(object sender, MouseEventArgs e)
+      /*  private void pnHead_MouseDown(object sender, MouseEventArgs e)
         {
     
             dragging = true;
@@ -52,7 +52,7 @@ namespace Main
             
             dragging = false;
         }
-
+*/
         private void btnClose_Click(object sender, System.EventArgs e)
         {
             Application.Exit();

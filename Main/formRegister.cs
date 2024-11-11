@@ -410,7 +410,7 @@ namespace Main
             }
         }
 
-        private void btnStartCamera_Click(object sender, EventArgs e)
+        private void btnStartCamera_Click_1(object sender, EventArgs e)
         {
             if (isCameraRunning)
             {
@@ -551,5 +551,7 @@ namespace Main
         {
 
         }
+
+
     }
 }

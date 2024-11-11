@@ -40,11 +40,11 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Qualy", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.label1.Location = new System.Drawing.Point(309, 128);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(441, 74);
+            this.label1.Size = new System.Drawing.Size(494, 73);
             this.label1.TabIndex = 5;
             this.label1.Text = "ATTENDANCE ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -55,7 +55,7 @@
             this.btnTimeOut.BackColor = System.Drawing.Color.Transparent;
             this.btnTimeOut.FlatAppearance.BorderSize = 5;
             this.btnTimeOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimeOut.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimeOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimeOut.ForeColor = System.Drawing.Color.Red;
             this.btnTimeOut.Location = new System.Drawing.Point(556, 394);
             this.btnTimeOut.Name = "btnTimeOut";
@@ -71,7 +71,7 @@
             this.btnTimeIn.BackColor = System.Drawing.Color.Transparent;
             this.btnTimeIn.FlatAppearance.BorderSize = 5;
             this.btnTimeIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimeIn.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimeIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimeIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.btnTimeIn.Location = new System.Drawing.Point(258, 394);
             this.btnTimeIn.Name = "btnTimeIn";
@@ -100,11 +100,11 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Qualy", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.label2.Location = new System.Drawing.Point(195, 202);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(650, 74);
+            this.label2.Size = new System.Drawing.Size(569, 73);
             this.label2.TabIndex = 6;
             this.label2.Text = "monitoring system";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -114,7 +114,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1040, 640);
+            this.ClientSize = new System.Drawing.Size(1406, 819);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
