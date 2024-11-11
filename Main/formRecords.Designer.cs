@@ -99,7 +99,7 @@
             this.btnExportAttendace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
             this.btnExportAttendace.FlatAppearance.BorderSize = 0;
             this.btnExportAttendace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportAttendace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportAttendace.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportAttendace.ForeColor = System.Drawing.Color.White;
             this.btnExportAttendace.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExportAttendace.Location = new System.Drawing.Point(839, 13);
@@ -114,11 +114,11 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.label1.Location = new System.Drawing.Point(22, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 33);
+            this.label1.Size = new System.Drawing.Size(273, 34);
             this.label1.TabIndex = 5;
             this.label1.Text = "Attendance Data";
             // 
@@ -127,7 +127,7 @@
             this.txtSearchAttendance.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSearchAttendance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtSearchAttendance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSearchAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchAttendance.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchAttendance.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtSearchAttendance.Location = new System.Drawing.Point(528, 17);
             this.txtSearchAttendance.MaxLength = 255;
@@ -144,7 +144,7 @@
             this.btnCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.btnCourse.FlatAppearance.BorderSize = 0;
             this.btnCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCourse.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCourse.ForeColor = System.Drawing.Color.White;
             this.btnCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCourse.Location = new System.Drawing.Point(673, 31);
@@ -162,7 +162,7 @@
             this.btnShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(8)))), ((int)(((byte)(4)))));
             this.btnShow.FlatAppearance.BorderSize = 0;
             this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShow.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShow.ForeColor = System.Drawing.Color.White;
             this.btnShow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnShow.Location = new System.Drawing.Point(871, 31);
@@ -179,7 +179,7 @@
             this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.btnStart.FlatAppearance.BorderSize = 0;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.Color.White;
             this.btnStart.Image = ((System.Drawing.Image)(resources.GetObject("btnStart.Image")));
             this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -198,7 +198,7 @@
             this.btnStartDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.btnStartDate.FlatAppearance.BorderSize = 0;
             this.btnStartDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartDate.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStartDate.ForeColor = System.Drawing.Color.White;
             this.btnStartDate.Image = ((System.Drawing.Image)(resources.GetObject("btnStartDate.Image")));
             this.btnStartDate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -241,7 +241,7 @@
             this.btnExportAbsent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
             this.btnExportAbsent.FlatAppearance.BorderSize = 0;
             this.btnExportAbsent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportAbsent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportAbsent.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportAbsent.ForeColor = System.Drawing.Color.White;
             this.btnExportAbsent.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExportAbsent.Location = new System.Drawing.Point(839, 12);
@@ -258,7 +258,7 @@
             this.txtSearchAbsentees.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSearchAbsentees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtSearchAbsentees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSearchAbsentees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchAbsentees.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchAbsentees.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtSearchAbsentees.Location = new System.Drawing.Point(528, 15);
             this.txtSearchAbsentees.MaxLength = 255;
@@ -272,11 +272,11 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.label4.Location = new System.Drawing.Point(23, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 33);
+            this.label4.Size = new System.Drawing.Size(198, 34);
             this.label4.TabIndex = 5;
             this.label4.Text = "Absent Data";
             // 
@@ -304,7 +304,7 @@
             this.panel5.Controls.Add(this.panel1);
             this.panel5.Controls.Add(this.btnShow);
             this.panel5.Controls.Add(this.btnCourse);
-            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Location = new System.Drawing.Point(-10, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1162, 707);
@@ -315,7 +315,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1406, 819);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formRecords";

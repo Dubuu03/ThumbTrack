@@ -64,11 +64,11 @@
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.label10.Location = new System.Drawing.Point(67, 10);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(164, 33);
+            this.label10.Size = new System.Drawing.Size(163, 34);
             this.label10.TabIndex = 5;
             this.label10.Text = "User\'s Log";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -93,7 +93,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
             this.panel3.Controls.Add(this.roundedPanel4);
             this.panel3.Controls.Add(this.roundedPanel1);
-            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Location = new System.Drawing.Point(-10, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1162, 707);
@@ -131,14 +131,15 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(74, 36);
+            this.label1.Location = new System.Drawing.Point(71, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 33);
+            this.label1.Size = new System.Drawing.Size(165, 34);
             this.label1.TabIndex = 25;
             this.label1.Text = "WELCOME!!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBoxPhoto
             // 
@@ -157,11 +158,11 @@
             this.lbCourse.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbCourse.AutoSize = true;
             this.lbCourse.BackColor = System.Drawing.Color.Transparent;
-            this.lbCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCourse.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCourse.ForeColor = System.Drawing.Color.White;
             this.lbCourse.Location = new System.Drawing.Point(122, 463);
             this.lbCourse.Name = "lbCourse";
-            this.lbCourse.Size = new System.Drawing.Size(84, 20);
+            this.lbCourse.Size = new System.Drawing.Size(67, 20);
             this.lbCourse.TabIndex = 24;
             this.lbCourse.Text = "BSCS 3B";
             this.lbCourse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -173,11 +174,11 @@
             this.lbName.AutoSize = true;
             this.lbName.BackColor = System.Drawing.Color.Transparent;
             this.lbName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.White;
             this.lbName.Location = new System.Drawing.Point(93, 387);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(124, 20);
+            this.lbName.Size = new System.Drawing.Size(122, 20);
             this.lbName.TabIndex = 22;
             this.lbName.Text = "Student Name";
             this.lbName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -205,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1406, 819);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formLogged";
