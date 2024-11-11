@@ -244,6 +244,19 @@ namespace Main
             lbeventName.Text = eventName; // Update the label with the event name
         }
 
+        private void txtAmInEnd_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbTIam_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

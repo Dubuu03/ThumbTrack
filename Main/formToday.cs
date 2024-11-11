@@ -86,8 +86,9 @@ namespace Main
             UpdateTime();
         }
 
-        
+        private void lbDate_Click(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

@@ -36,16 +36,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(89, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 20);
+            this.label1.Size = new System.Drawing.Size(142, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "Enter Student ID";
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(86, 88);
+            this.btnSubmit.Location = new System.Drawing.Point(84, 102);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(151, 37);
             this.btnSubmit.TabIndex = 7;
