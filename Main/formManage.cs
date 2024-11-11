@@ -360,5 +360,35 @@ namespace Main
                 btnBrowse.Enabled = false;
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundedPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnCapturePhoto_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStartCamera_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbStudentID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

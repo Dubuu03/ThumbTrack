@@ -10,7 +10,25 @@ namespace Main
         public formAttendance()
         {
             InitializeComponent();
+
+
+            //hover hinde ko alam kung nagana pero kasi pnhead error 
+            //btnTimeIn.MouseEnter += btnTimeIn_MouseEnter;
+            //btnTimeIn.MouseLeave += btnTimeIn_MouseLeave;
+
         }
+        //hover
+        //private void btnTimeIn_MouseEnter(object sender, EventArgs e)
+        //{
+        //    btnTimeIn.BackColor = System.Drawing.Color.LightGreen; // Change to hover color
+        //}
+
+        //// MouseLeave event handler to remove hover effect
+        //private void btnTimeIn_MouseLeave(object sender, EventArgs e)
+        //{
+        //    btnTimeIn.BackColor = System.Drawing.Color.Transparent; // Reset to default color
+        //}
+
 
         private bool isNameFormOpen = false;
 
@@ -259,6 +277,15 @@ namespace Main
         {
 
         }
-      
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

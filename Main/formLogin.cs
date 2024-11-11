@@ -100,5 +100,10 @@ namespace Main
                 MessageBox.Show("Invalid Student ID or password.");
             }
         }
+
+        private void txtStudentID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
