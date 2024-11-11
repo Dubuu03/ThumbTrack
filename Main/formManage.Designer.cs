@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnShow = new System.Windows.Forms.Button();
+            this.tbStudentID = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.roundedPanel2 = new RoundedPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnStartCamera = new System.Windows.Forms.Button();
@@ -53,11 +58,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbFingerprint = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnShow = new System.Windows.Forms.Button();
-            this.tbStudentID = new System.Windows.Forms.TextBox();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
@@ -82,6 +82,80 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1162, 707);
             this.panel1.TabIndex = 27;
+            // 
+            // btnShow
+            // 
+            this.btnShow.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(172)))), ((int)(((byte)(71)))));
+            this.btnShow.FlatAppearance.BorderSize = 0;
+            this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShow.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShow.ForeColor = System.Drawing.Color.White;
+            this.btnShow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnShow.Location = new System.Drawing.Point(486, 80);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.btnShow.Size = new System.Drawing.Size(116, 36);
+            this.btnShow.TabIndex = 25;
+            this.btnShow.Text = "Search";
+            this.btnShow.UseVisualStyleBackColor = false;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
+            // 
+            // tbStudentID
+            // 
+            this.tbStudentID.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbStudentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
+            this.tbStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbStudentID.Font = new System.Drawing.Font("Qualy", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbStudentID.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.tbStudentID.Location = new System.Drawing.Point(30, 80);
+            this.tbStudentID.Name = "tbStudentID";
+            this.tbStudentID.Size = new System.Drawing.Size(438, 35);
+            this.tbStudentID.TabIndex = 23;
+            this.tbStudentID.Text = "Enter Student ID";
+            // 
+            // btnClear
+            // 
+            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnClear.FlatAppearance.BorderSize = 3;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(168)))), ((int)(((byte)(33)))));
+            this.btnClear.Location = new System.Drawing.Point(130, 646);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(223, 51);
+            this.btnClear.TabIndex = 44;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnDelete.FlatAppearance.BorderSize = 3;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(8)))), ((int)(((byte)(4)))));
+            this.btnDelete.Location = new System.Drawing.Point(520, 646);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(223, 51);
+            this.btnDelete.TabIndex = 43;
+            this.btnDelete.Text = "DELETE";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
+            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(832, 646);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(223, 51);
+            this.btnUpdate.TabIndex = 41;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = false;
             // 
             // roundedPanel2
             // 
@@ -162,8 +236,8 @@
             // btnPassword
             // 
             this.btnPassword.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(8)))), ((int)(((byte)(4)))));
-            this.btnPassword.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(8)))), ((int)(((byte)(4)))));
+            this.btnPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(73)))), ((int)(((byte)(67)))));
+            this.btnPassword.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(73)))), ((int)(((byte)(67)))));
             this.btnPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPassword.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPassword.ForeColor = System.Drawing.Color.White;
@@ -397,80 +471,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(333, 328);
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
-            // 
-            // btnShow
-            // 
-            this.btnShow.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(172)))), ((int)(((byte)(71)))));
-            this.btnShow.FlatAppearance.BorderSize = 0;
-            this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShow.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShow.ForeColor = System.Drawing.Color.White;
-            this.btnShow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnShow.Location = new System.Drawing.Point(486, 80);
-            this.btnShow.Name = "btnShow";
-            this.btnShow.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.btnShow.Size = new System.Drawing.Size(116, 36);
-            this.btnShow.TabIndex = 25;
-            this.btnShow.Text = "Search";
-            this.btnShow.UseVisualStyleBackColor = false;
-            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
-            // 
-            // tbStudentID
-            // 
-            this.tbStudentID.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbStudentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
-            this.tbStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbStudentID.Font = new System.Drawing.Font("Qualy", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbStudentID.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tbStudentID.Location = new System.Drawing.Point(30, 80);
-            this.tbStudentID.Name = "tbStudentID";
-            this.tbStudentID.Size = new System.Drawing.Size(438, 35);
-            this.tbStudentID.TabIndex = 23;
-            this.tbStudentID.Text = "Enter Student ID";
-            // 
-            // btnClear
-            // 
-            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnClear.FlatAppearance.BorderSize = 3;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(168)))), ((int)(((byte)(33)))));
-            this.btnClear.Location = new System.Drawing.Point(130, 646);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(223, 51);
-            this.btnClear.TabIndex = 44;
-            this.btnClear.Text = "CLEAR";
-            this.btnClear.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnDelete.FlatAppearance.BorderSize = 3;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(8)))), ((int)(((byte)(4)))));
-            this.btnDelete.Location = new System.Drawing.Point(472, 646);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(223, 51);
-            this.btnDelete.TabIndex = 43;
-            this.btnDelete.Text = "DELETE";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
-            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(784, 646);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(223, 51);
-            this.btnUpdate.TabIndex = 41;
-            this.btnUpdate.Text = "UPDATE";
-            this.btnUpdate.UseVisualStyleBackColor = false;
             // 
             // formManage
             // 

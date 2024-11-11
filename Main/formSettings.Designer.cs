@@ -66,6 +66,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.lbeventName = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel5.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
             this.roundedPanel3.SuspendLayout();
@@ -327,6 +329,7 @@
             this.roundedPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.roundedPanel2.BorderRadius = 30;
+            this.roundedPanel2.Controls.Add(this.panel1);
             this.roundedPanel2.Controls.Add(this.label10);
             this.roundedPanel2.Controls.Add(this.label19);
             this.roundedPanel2.Controls.Add(this.label18);
@@ -385,7 +388,7 @@
             "4th Year"});
             this.clbYearLevel.Location = new System.Drawing.Point(192, 118);
             this.clbYearLevel.Name = "clbYearLevel";
-            this.clbYearLevel.Size = new System.Drawing.Size(114, 63);
+            this.clbYearLevel.Size = new System.Drawing.Size(114, 84);
             this.clbYearLevel.TabIndex = 15;
             // 
             // clbCourse
@@ -403,7 +406,7 @@
             "BMMA"});
             this.clbCourse.Location = new System.Drawing.Point(38, 118);
             this.clbCourse.Name = "clbCourse";
-            this.clbCourse.Size = new System.Drawing.Size(108, 84);
+            this.clbCourse.Size = new System.Drawing.Size(110, 105);
             this.clbCourse.TabIndex = 14;
             // 
             // roundedPanel1
@@ -411,6 +414,7 @@
             this.roundedPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.roundedPanel1.BorderRadius = 30;
+            this.roundedPanel1.Controls.Add(this.panel2);
             this.roundedPanel1.Controls.Add(this.label14);
             this.roundedPanel1.Controls.Add(this.lbParticipants);
             this.roundedPanel1.Controls.Add(this.label16);
@@ -574,6 +578,24 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "Today\'s Event:";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Location = new System.Drawing.Point(0, 69);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(374, 1);
+            this.panel1.TabIndex = 30;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Location = new System.Drawing.Point(0, 68);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(368, 1);
+            this.panel2.TabIndex = 31;
+            // 
             // formSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -637,5 +659,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

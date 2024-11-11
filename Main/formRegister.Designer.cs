@@ -78,7 +78,7 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(499, 651);
+            this.btnRegister.Location = new System.Drawing.Point(525, 651);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(546, 45);
             this.btnRegister.TabIndex = 15;
@@ -93,7 +93,7 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(8)))), ((int)(((byte)(4)))));
-            this.btnClear.Location = new System.Drawing.Point(499, 604);
+            this.btnClear.Location = new System.Drawing.Point(525, 604);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(262, 40);
             this.btnClear.TabIndex = 19;
@@ -108,7 +108,7 @@
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(168)))), ((int)(((byte)(33)))));
-            this.btnStart.Location = new System.Drawing.Point(770, 604);
+            this.btnStart.Location = new System.Drawing.Point(796, 604);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(274, 40);
             this.btnStart.TabIndex = 20;
