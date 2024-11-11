@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.panel8 = new System.Windows.Forms.Panel();
-            this.roundedPanel18 = new RoundedPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.roundedPanel2 = new RoundedPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.roundedPanel5 = new RoundedPanel();
@@ -65,8 +63,8 @@
             this.roundedPanel9 = new RoundedPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnExport = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
-            this.roundedPanel18.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
@@ -89,7 +87,7 @@
             // 
             this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.panel8.Controls.Add(this.roundedPanel18);
+            this.panel8.Controls.Add(this.btnExport);
             this.panel8.Controls.Add(this.roundedPanel2);
             this.panel8.Controls.Add(this.roundedPanel1);
             this.panel8.Location = new System.Drawing.Point(-1, 0);
@@ -97,31 +95,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1549, 870);
             this.panel8.TabIndex = 8;
-            // 
-            // roundedPanel18
-            // 
-            this.roundedPanel18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.roundedPanel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
-            this.roundedPanel18.BorderRadius = 30;
-            this.roundedPanel18.Controls.Add(this.label1);
-            this.roundedPanel18.Location = new System.Drawing.Point(725, 735);
-            this.roundedPanel18.Margin = new System.Windows.Forms.Padding(4);
-            this.roundedPanel18.Name = "roundedPanel18";
-            this.roundedPanel18.Size = new System.Drawing.Size(719, 62);
-            this.roundedPanel18.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Qualy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(239, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 32);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Export Records";
             // 
             // roundedPanel2
             // 
@@ -569,6 +542,22 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Total Login";
             // 
+            // btnExport
+            // 
+            this.btnExport.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
+            this.btnExport.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExport.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport.ForeColor = System.Drawing.Color.White;
+            this.btnExport.Location = new System.Drawing.Point(725, 764);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(719, 55);
+            this.btnExport.TabIndex = 16;
+            this.btnExport.Text = "Export Today\'s Record";
+            this.btnExport.UseVisualStyleBackColor = false;
+            // 
             // formHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -582,8 +571,6 @@
             this.Text = "formHome";
             this.Load += new System.EventHandler(this.formHome_Load);
             this.panel8.ResumeLayout(false);
-            this.roundedPanel18.ResumeLayout(false);
-            this.roundedPanel18.PerformLayout();
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel2.PerformLayout();
             this.roundedPanel5.ResumeLayout(false);
@@ -652,7 +639,6 @@
         private RoundedPanel roundedPanel13;
         private System.Windows.Forms.Label label11;
         private RoundedPanel roundedPanel10;
-        private RoundedPanel roundedPanel18;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnExport;
     }
 }

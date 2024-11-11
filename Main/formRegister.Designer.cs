@@ -70,16 +70,16 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRegister.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
             this.btnRegister.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(572, 718);
+            this.btnRegister.Location = new System.Drawing.Point(645, 743);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(723, 55);
+            this.btnRegister.Size = new System.Drawing.Size(728, 55);
             this.btnRegister.TabIndex = 15;
             this.btnRegister.Text = "REGISTER";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -87,12 +87,12 @@
             // 
             // btnClear
             // 
-            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClear.FlatAppearance.BorderSize = 5;
+            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnClear.FlatAppearance.BorderSize = 3;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(8)))), ((int)(((byte)(4)))));
-            this.btnClear.Location = new System.Drawing.Point(567, 661);
+            this.btnClear.Location = new System.Drawing.Point(645, 686);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(349, 49);
@@ -103,12 +103,12 @@
             // 
             // btnStart
             // 
-            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStart.FlatAppearance.BorderSize = 5;
+            this.btnStart.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnStart.FlatAppearance.BorderSize = 3;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(168)))), ((int)(((byte)(33)))));
-            this.btnStart.Location = new System.Drawing.Point(929, 661);
+            this.btnStart.Location = new System.Drawing.Point(1007, 686);
             this.btnStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(365, 49);
@@ -130,7 +130,7 @@
             this.panel1.Controls.Add(this.btnStart);
             this.panel1.Controls.Add(this.btnClear);
             this.panel1.Controls.Add(this.btnRegister);
-            this.panel1.Location = new System.Drawing.Point(-13, -1);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1549, 870);
@@ -138,7 +138,7 @@
             // 
             // roundedPanel2
             // 
-            this.roundedPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.roundedPanel2.BorderRadius = 30;
             this.roundedPanel2.Controls.Add(this.label11);
@@ -159,7 +159,7 @@
             this.roundedPanel2.Controls.Add(this.label5);
             this.roundedPanel2.Controls.Add(this.txtName);
             this.roundedPanel2.Controls.Add(this.label7);
-            this.roundedPanel2.Location = new System.Drawing.Point(539, 25);
+            this.roundedPanel2.Location = new System.Drawing.Point(617, 50);
             this.roundedPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(800, 629);
@@ -206,6 +206,7 @@
             this.btnCapturePhoto.TabIndex = 38;
             this.btnCapturePhoto.Text = "Capture";
             this.btnCapturePhoto.UseVisualStyleBackColor = false;
+            this.btnCapturePhoto.Click += new System.EventHandler(this.btnCapturePhoto_Click);
             // 
             // pictureBoxPhoto
             // 
@@ -235,6 +236,7 @@
             this.btnBrowse.TabIndex = 36;
             this.btnBrowse.Text = "Browse Photo";
             this.btnBrowse.UseVisualStyleBackColor = false;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // btnStartCamera
             // 
@@ -259,6 +261,7 @@
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.White;
             this.txtPassword.Location = new System.Drawing.Point(33, 322);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.MaxLength = 6;
@@ -273,6 +276,7 @@
             this.txtSection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtSection.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSection.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSection.ForeColor = System.Drawing.Color.White;
             this.txtSection.Location = new System.Drawing.Point(33, 576);
             this.txtSection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSection.MaxLength = 10;
@@ -287,6 +291,7 @@
             this.txtStudentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStudentID.ForeColor = System.Drawing.Color.White;
             this.txtStudentID.Location = new System.Drawing.Point(33, 155);
             this.txtStudentID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStudentID.MaxLength = 7;
@@ -301,6 +306,7 @@
             this.txtYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtYear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtYear.ForeColor = System.Drawing.Color.White;
             this.txtYear.Location = new System.Drawing.Point(33, 491);
             this.txtYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtYear.MaxLength = 10;
@@ -318,9 +324,9 @@
             this.label2.Location = new System.Drawing.Point(28, 288);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 23);
+            this.label2.Size = new System.Drawing.Size(207, 23);
             this.label2.TabIndex = 33;
-            this.label2.Text = "Password:";
+            this.label2.Text = "Password (6-Digits)";
             // 
             // label6
             // 
@@ -341,6 +347,7 @@
             this.txtCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtCourse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCourse.ForeColor = System.Drawing.Color.White;
             this.txtCourse.Location = new System.Drawing.Point(33, 404);
             this.txtCourse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCourse.MaxLength = 4;
@@ -394,6 +401,7 @@
             this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.White;
             this.txtName.Location = new System.Drawing.Point(33, 239);
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Multiline = true;
@@ -416,7 +424,7 @@
             // 
             // roundedPanel1
             // 
-            this.roundedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.roundedPanel1.BorderRadius = 30;
             this.roundedPanel1.Controls.Add(this.label10);
@@ -426,7 +434,7 @@
             this.roundedPanel1.Controls.Add(this.Prompt);
             this.roundedPanel1.Controls.Add(this.statusLabel);
             this.roundedPanel1.Controls.Add(this.fImage);
-            this.roundedPanel1.Location = new System.Drawing.Point(49, 28);
+            this.roundedPanel1.Location = new System.Drawing.Point(127, 53);
             this.roundedPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(453, 724);
@@ -478,6 +486,7 @@
             this.statusText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.statusText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.statusText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusText.ForeColor = System.Drawing.Color.White;
             this.statusText.Location = new System.Drawing.Point(36, 496);
             this.statusText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.statusText.MaxLength = 4;
@@ -492,6 +501,7 @@
             this.Prompt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.Prompt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Prompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Prompt.ForeColor = System.Drawing.Color.White;
             this.Prompt.Location = new System.Drawing.Point(36, 463);
             this.Prompt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Prompt.MaxLength = 4;

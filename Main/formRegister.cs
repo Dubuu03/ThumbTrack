@@ -44,8 +44,8 @@ namespace Main
             txtPassword.PasswordChar = '*';
 
             pictureBoxPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxPhoto.Width = 287;
-            pictureBoxPhoto.Height = 287;
+            pictureBoxPhoto.Width = 265;
+            pictureBoxPhoto.Height = 280;
 
             InitializeFingerprintCapture();
 
@@ -551,7 +551,6 @@ namespace Main
         {
 
         }
-
 
     }
 }

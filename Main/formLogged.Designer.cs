@@ -56,7 +56,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label10);
             this.panel2.Location = new System.Drawing.Point(46, 31);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(773, 68);
             this.panel2.TabIndex = 3;
@@ -83,11 +83,11 @@
             this.dgvAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAttendance.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvAttendance.Location = new System.Drawing.Point(46, 101);
-            this.dgvAttendance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvAttendance.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAttendance.Name = "dgvAttendance";
             this.dgvAttendance.ReadOnly = true;
             this.dgvAttendance.RowHeadersWidth = 51;
-            this.dgvAttendance.Size = new System.Drawing.Size(773, 329);
+            this.dgvAttendance.Size = new System.Drawing.Size(773, 570);
             this.dgvAttendance.TabIndex = 2;
             // 
             // panel3
@@ -108,10 +108,10 @@
             this.roundedPanel4.BorderRadius = 30;
             this.roundedPanel4.Controls.Add(this.dgvAttendance);
             this.roundedPanel4.Controls.Add(this.panel2);
-            this.roundedPanel4.Location = new System.Drawing.Point(524, 36);
-            this.roundedPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundedPanel4.Location = new System.Drawing.Point(586, 36);
+            this.roundedPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.roundedPanel4.Name = "roundedPanel4";
-            this.roundedPanel4.Size = new System.Drawing.Size(839, 464);
+            this.roundedPanel4.Size = new System.Drawing.Size(866, 720);
             this.roundedPanel4.TabIndex = 5;
             this.roundedPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel4_Paint);
             // 
@@ -125,8 +125,8 @@
             this.roundedPanel1.Controls.Add(this.lbName);
             this.roundedPanel1.Controls.Add(this.roundedPanel2);
             this.roundedPanel1.Controls.Add(this.roundedPanel3);
-            this.roundedPanel1.Location = new System.Drawing.Point(50, 36);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundedPanel1.Location = new System.Drawing.Point(112, 36);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(415, 720);
             this.roundedPanel1.TabIndex = 4;
@@ -153,7 +153,7 @@
             this.pictureBoxPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.pictureBoxPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxPhoto.Location = new System.Drawing.Point(50, 119);
-            this.pictureBoxPhoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxPhoto.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxPhoto.Name = "pictureBoxPhoto";
             this.pictureBoxPhoto.Size = new System.Drawing.Size(338, 324);
             this.pictureBoxPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -197,7 +197,7 @@
             this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel2.BorderRadius = 30;
             this.roundedPanel2.Location = new System.Drawing.Point(93, 466);
-            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(256, 48);
             this.roundedPanel2.TabIndex = 26;
@@ -207,7 +207,7 @@
             this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel3.BorderRadius = 30;
             this.roundedPanel3.Location = new System.Drawing.Point(93, 560);
-            this.roundedPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundedPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.roundedPanel3.Name = "roundedPanel3";
             this.roundedPanel3.Size = new System.Drawing.Size(256, 48);
             this.roundedPanel3.TabIndex = 27;
@@ -220,7 +220,7 @@
             this.ClientSize = new System.Drawing.Size(1848, 970);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formLogged";
             this.Text = "formLogged";
             this.panel2.ResumeLayout(false);

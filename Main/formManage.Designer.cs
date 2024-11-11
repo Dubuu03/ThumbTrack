@@ -187,6 +187,7 @@
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.White;
             this.txtPassword.Location = new System.Drawing.Point(52, 229);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
@@ -215,6 +216,7 @@
             this.txtCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtCourse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCourse.ForeColor = System.Drawing.Color.White;
             this.txtCourse.Location = new System.Drawing.Point(52, 370);
             this.txtCourse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCourse.MaxLength = 4;
@@ -310,6 +312,7 @@
             this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.White;
             this.txtName.Location = new System.Drawing.Point(52, 151);
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Name = "txtName";
@@ -322,6 +325,7 @@
             this.txtYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtYear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtYear.ForeColor = System.Drawing.Color.White;
             this.txtYear.Location = new System.Drawing.Point(52, 453);
             this.txtYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtYear.MaxLength = 10;
@@ -348,6 +352,7 @@
             this.txtSection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtSection.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSection.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSection.ForeColor = System.Drawing.Color.White;
             this.txtSection.Location = new System.Drawing.Point(52, 535);
             this.txtSection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSection.MaxLength = 10;
@@ -432,7 +437,7 @@
             // btnClear
             // 
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnClear.FlatAppearance.BorderSize = 5;
+            this.btnClear.FlatAppearance.BorderSize = 3;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(168)))), ((int)(((byte)(33)))));
@@ -447,7 +452,7 @@
             // btnDelete
             // 
             this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnDelete.FlatAppearance.BorderSize = 5;
+            this.btnDelete.FlatAppearance.BorderSize = 3;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(8)))), ((int)(((byte)(4)))));

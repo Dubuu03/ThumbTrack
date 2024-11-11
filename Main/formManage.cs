@@ -16,8 +16,9 @@ namespace Main
         {
             InitializeComponent();
             pictureBoxPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxPhoto.Width = 287;
-            pictureBoxPhoto.Height = 287;
+            pictureBoxPhoto.Width = 260;
+            pictureBoxPhoto.Height = 250;
+
 
             SetTextBoxesReadOnly(true);
             DisableActionButtons();
@@ -102,7 +103,7 @@ namespace Main
             }
         }
 
-        private void btnBrowse_Click(object sender, EventArgs e)
+        private void btnBrowse_Click_1(object sender, EventArgs e)
         {
             StopCamera();
 
@@ -126,7 +127,7 @@ namespace Main
             }
         }
 
-        private void btnStartCamera_Click(object sender, EventArgs e)
+        private void btnStartCamera_Click_1(object sender, EventArgs e)
         {
             if (isCameraRunning)
             {
@@ -185,7 +186,7 @@ namespace Main
             pictureBoxPhoto.Image = croppedFrame;
         }
 
-        private void btnCapturePhoto_Click(object sender, EventArgs e)
+        private void btnCapturePhoto_Click_1(object sender, EventArgs e)
         {
             CapturePhoto();
         }
@@ -372,16 +373,6 @@ namespace Main
         }
 
         private void roundedPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnCapturePhoto_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnStartCamera_Click_1(object sender, EventArgs e)
         {
 
         }
