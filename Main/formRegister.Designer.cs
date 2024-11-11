@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formRegister));
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
@@ -79,7 +80,7 @@
             this.btnRegister.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Location = new System.Drawing.Point(700, 801);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(728, 55);
             this.btnRegister.TabIndex = 15;
@@ -95,7 +96,7 @@
             this.btnClear.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(8)))), ((int)(((byte)(4)))));
             this.btnClear.Location = new System.Drawing.Point(700, 743);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(349, 49);
             this.btnClear.TabIndex = 19;
@@ -111,7 +112,7 @@
             this.btnStart.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(168)))), ((int)(((byte)(33)))));
             this.btnStart.Location = new System.Drawing.Point(1061, 743);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(365, 49);
             this.btnStart.TabIndex = 20;
@@ -164,7 +165,7 @@
             this.roundedPanel2.Controls.Add(this.txtName);
             this.roundedPanel2.Controls.Add(this.label7);
             this.roundedPanel2.Location = new System.Drawing.Point(637, 98);
-            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(872, 629);
             this.roundedPanel2.TabIndex = 22;
@@ -173,7 +174,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(1, 76);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(867, 1);
             this.panel3.TabIndex = 40;
@@ -184,12 +185,14 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.label11.Image = ((System.Drawing.Image)(resources.GetObject("label11.Image")));
+            this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label11.Location = new System.Drawing.Point(47, 18);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(364, 43);
+            this.label11.Size = new System.Drawing.Size(408, 43);
             this.label11.TabIndex = 34;
-            this.label11.Text = "Basic Information";
+            this.label11.Text = "    Basic Information";
             // 
             // label4
             // 
@@ -213,7 +216,7 @@
             this.btnCapturePhoto.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapturePhoto.ForeColor = System.Drawing.Color.White;
             this.btnCapturePhoto.Location = new System.Drawing.Point(617, 502);
-            this.btnCapturePhoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCapturePhoto.Margin = new System.Windows.Forms.Padding(4);
             this.btnCapturePhoto.Name = "btnCapturePhoto";
             this.btnCapturePhoto.Size = new System.Drawing.Size(187, 49);
             this.btnCapturePhoto.TabIndex = 38;
@@ -227,7 +230,7 @@
             this.pictureBoxPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.pictureBoxPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxPhoto.Location = new System.Drawing.Point(419, 142);
-            this.pictureBoxPhoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxPhoto.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxPhoto.Name = "pictureBoxPhoto";
             this.pictureBoxPhoto.Size = new System.Drawing.Size(385, 344);
             this.pictureBoxPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -243,7 +246,7 @@
             this.btnBrowse.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
             this.btnBrowse.Location = new System.Drawing.Point(419, 559);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(4);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(385, 49);
             this.btnBrowse.TabIndex = 36;
@@ -260,7 +263,7 @@
             this.btnStartCamera.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStartCamera.ForeColor = System.Drawing.Color.White;
             this.btnStartCamera.Location = new System.Drawing.Point(419, 502);
-            this.btnStartCamera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStartCamera.Margin = new System.Windows.Forms.Padding(4);
             this.btnStartCamera.Name = "btnStartCamera";
             this.btnStartCamera.Size = new System.Drawing.Size(187, 49);
             this.btnStartCamera.TabIndex = 37;
@@ -276,7 +279,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.White;
             this.txtPassword.Location = new System.Drawing.Point(55, 316);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.MaxLength = 6;
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
@@ -291,7 +294,7 @@
             this.txtSection.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSection.ForeColor = System.Drawing.Color.White;
             this.txtSection.Location = new System.Drawing.Point(55, 570);
-            this.txtSection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSection.Margin = new System.Windows.Forms.Padding(4);
             this.txtSection.MaxLength = 10;
             this.txtSection.Multiline = true;
             this.txtSection.Name = "txtSection";
@@ -306,7 +309,7 @@
             this.txtStudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStudentID.ForeColor = System.Drawing.Color.White;
             this.txtStudentID.Location = new System.Drawing.Point(55, 149);
-            this.txtStudentID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtStudentID.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudentID.MaxLength = 7;
             this.txtStudentID.Multiline = true;
             this.txtStudentID.Name = "txtStudentID";
@@ -321,7 +324,7 @@
             this.txtYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtYear.ForeColor = System.Drawing.Color.White;
             this.txtYear.Location = new System.Drawing.Point(55, 485);
-            this.txtYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtYear.Margin = new System.Windows.Forms.Padding(4);
             this.txtYear.MaxLength = 10;
             this.txtYear.Multiline = true;
             this.txtYear.Name = "txtYear";
@@ -362,7 +365,7 @@
             this.txtCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCourse.ForeColor = System.Drawing.Color.White;
             this.txtCourse.Location = new System.Drawing.Point(55, 398);
-            this.txtCourse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCourse.Margin = new System.Windows.Forms.Padding(4);
             this.txtCourse.MaxLength = 4;
             this.txtCourse.Multiline = true;
             this.txtCourse.Name = "txtCourse";
@@ -416,7 +419,7 @@
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.White;
             this.txtName.Location = new System.Drawing.Point(55, 233);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(302, 36);
@@ -449,7 +452,7 @@
             this.roundedPanel1.Controls.Add(this.statusLabel);
             this.roundedPanel1.Controls.Add(this.fImage);
             this.roundedPanel1.Location = new System.Drawing.Point(36, 96);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(544, 764);
             this.roundedPanel1.TabIndex = 21;
@@ -458,7 +461,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(3, 79);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(540, 1);
             this.panel2.TabIndex = 34;
@@ -469,12 +472,14 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.label10.Location = new System.Drawing.Point(41, 21);
+            this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
+            this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label10.Location = new System.Drawing.Point(41, 20);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(240, 43);
+            this.label10.Size = new System.Drawing.Size(274, 43);
             this.label10.TabIndex = 33;
-            this.label10.Text = "Total Login";
+            this.label10.Text = "    Fingerprint";
             // 
             // label9
             // 
@@ -511,7 +516,7 @@
             this.statusText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusText.ForeColor = System.Drawing.Color.White;
             this.statusText.Location = new System.Drawing.Point(49, 505);
-            this.statusText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.statusText.Margin = new System.Windows.Forms.Padding(4);
             this.statusText.MaxLength = 4;
             this.statusText.Multiline = true;
             this.statusText.Name = "statusText";
@@ -526,7 +531,7 @@
             this.Prompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Prompt.ForeColor = System.Drawing.Color.White;
             this.Prompt.Location = new System.Drawing.Point(49, 469);
-            this.Prompt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Prompt.Margin = new System.Windows.Forms.Padding(4);
             this.Prompt.MaxLength = 4;
             this.Prompt.Name = "Prompt";
             this.Prompt.Size = new System.Drawing.Size(443, 24);
@@ -552,7 +557,7 @@
             this.fImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.fImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.fImage.Location = new System.Drawing.Point(49, 151);
-            this.fImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fImage.Margin = new System.Windows.Forms.Padding(4);
             this.fImage.Name = "fImage";
             this.fImage.Size = new System.Drawing.Size(443, 274);
             this.fImage.TabIndex = 26;
@@ -566,7 +571,7 @@
             this.ClientSize = new System.Drawing.Size(1848, 970);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formRegister";
             this.Text = "formRegister";
             this.Load += new System.EventHandler(this.formRegister_Load);
