@@ -93,7 +93,7 @@
             this.tbStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbStudentID.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbStudentID.ForeColor = System.Drawing.Color.White;
-            this.tbStudentID.Location = new System.Drawing.Point(27, 20);
+            this.tbStudentID.Location = new System.Drawing.Point(84, 32);
             this.tbStudentID.Name = "tbStudentID";
             this.tbStudentID.Size = new System.Drawing.Size(438, 26);
             this.tbStudentID.TabIndex = 23;
@@ -109,7 +109,7 @@
             this.btnShow.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShow.ForeColor = System.Drawing.Color.White;
             this.btnShow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnShow.Location = new System.Drawing.Point(483, 20);
+            this.btnShow.Location = new System.Drawing.Point(540, 32);
             this.btnShow.Name = "btnShow";
             this.btnShow.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.btnShow.Size = new System.Drawing.Size(111, 26);
@@ -137,6 +137,7 @@
             // 
             // roundedPanel2
             // 
+            this.roundedPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.roundedPanel2.BorderRadius = 30;
             this.roundedPanel2.Controls.Add(this.label8);
@@ -156,7 +157,7 @@
             this.roundedPanel2.Controls.Add(this.btnStartCamera);
             this.roundedPanel2.Controls.Add(this.btnBrowse);
             this.roundedPanel2.Controls.Add(this.label7);
-            this.roundedPanel2.Location = new System.Drawing.Point(390, 73);
+            this.roundedPanel2.Location = new System.Drawing.Point(447, 85);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(621, 494);
             this.roundedPanel2.TabIndex = 28;
@@ -380,12 +381,13 @@
             // 
             // roundedPanel1
             // 
+            this.roundedPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.roundedPanel1.BorderRadius = 30;
             this.roundedPanel1.Controls.Add(this.label1);
             this.roundedPanel1.Controls.Add(this.lbFingerprint);
             this.roundedPanel1.Controls.Add(this.pictureBox2);
-            this.roundedPanel1.Location = new System.Drawing.Point(27, 73);
+            this.roundedPanel1.Location = new System.Drawing.Point(84, 85);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(340, 494);
             this.roundedPanel1.TabIndex = 27;
@@ -410,7 +412,7 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(168)))), ((int)(((byte)(33)))));
-            this.btnClear.Location = new System.Drawing.Point(77, 577);
+            this.btnClear.Location = new System.Drawing.Point(134, 589);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(223, 51);
             this.btnClear.TabIndex = 44;
@@ -424,7 +426,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(8)))), ((int)(((byte)(4)))));
-            this.btnDelete.Location = new System.Drawing.Point(419, 577);
+            this.btnDelete.Location = new System.Drawing.Point(476, 589);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(223, 51);
             this.btnDelete.TabIndex = 43;
@@ -439,7 +441,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(731, 577);
+            this.btnUpdate.Location = new System.Drawing.Point(788, 589);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(223, 51);
             this.btnUpdate.TabIndex = 41;

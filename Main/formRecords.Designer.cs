@@ -58,9 +58,9 @@
             // dgvAttendance
             // 
             this.dgvAttendance.AllowUserToAddRows = false;
+            this.dgvAttendance.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvAttendance.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.dgvAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAttendance.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvAttendance.Location = new System.Drawing.Point(0, 58);
             this.dgvAttendance.Name = "dgvAttendance";
             this.dgvAttendance.ReadOnly = true;
@@ -80,13 +80,13 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btnExportAttendace);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtSearchAttendance);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(997, 58);
@@ -223,13 +223,13 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.btnExportAbsent);
             this.panel4.Controls.Add(this.txtSearchAbsentees);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(997, 58);
@@ -283,9 +283,9 @@
             // dgvAbsent
             // 
             this.dgvAbsent.AllowUserToAddRows = false;
+            this.dgvAbsent.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvAbsent.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.dgvAbsent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAbsent.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvAbsent.Location = new System.Drawing.Point(0, 58);
             this.dgvAbsent.Name = "dgvAbsent";
             this.dgvAbsent.ReadOnly = true;

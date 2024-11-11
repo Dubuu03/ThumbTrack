@@ -99,6 +99,7 @@
             // 
             // roundedPanel18
             // 
+            this.roundedPanel18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
             this.roundedPanel18.BorderRadius = 30;
             this.roundedPanel18.Controls.Add(this.label1);
@@ -109,6 +110,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Qualy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -120,6 +122,7 @@
             // 
             // roundedPanel2
             // 
+            this.roundedPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.roundedPanel2.BorderRadius = 30;
             this.roundedPanel2.Controls.Add(this.label8);
@@ -153,6 +156,7 @@
             // 
             // roundedPanel5
             // 
+            this.roundedPanel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel5.BorderRadius = 30;
             this.roundedPanel5.Controls.Add(this.lbToAM);
@@ -188,6 +192,7 @@
             // 
             // roundedPanel4
             // 
+            this.roundedPanel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel4.BorderRadius = 30;
             this.roundedPanel4.Controls.Add(this.lbTiAM);
@@ -211,6 +216,7 @@
             // 
             // roundedPanel3
             // 
+            this.roundedPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel3.BorderRadius = 30;
             this.roundedPanel3.Controls.Add(this.lbStudent);
@@ -282,6 +288,7 @@
             // 
             // roundedPanel6
             // 
+            this.roundedPanel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel6.BorderRadius = 30;
             this.roundedPanel6.Controls.Add(this.lbTiPM);
@@ -305,6 +312,7 @@
             // 
             // roundedPanel7
             // 
+            this.roundedPanel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel7.BorderRadius = 30;
             this.roundedPanel7.Controls.Add(this.lbToPM);
@@ -328,6 +336,7 @@
             // 
             // roundedPanel1
             // 
+            this.roundedPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.roundedPanel1.BorderRadius = 30;
             this.roundedPanel1.Controls.Add(this.roundedPanel16);
@@ -344,6 +353,7 @@
             // 
             // roundedPanel16
             // 
+            this.roundedPanel16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel16.BorderRadius = 30;
             this.roundedPanel16.Controls.Add(this.roundedPanel17);
@@ -354,6 +364,7 @@
             // 
             // roundedPanel17
             // 
+            this.roundedPanel17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.roundedPanel17.BorderRadius = 30;
             this.roundedPanel17.Controls.Add(this.label13);
@@ -376,6 +387,7 @@
             // 
             // roundedPanel14
             // 
+            this.roundedPanel14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel14.BorderRadius = 30;
             this.roundedPanel14.Controls.Add(this.roundedPanel15);
@@ -386,6 +398,7 @@
             // 
             // roundedPanel15
             // 
+            this.roundedPanel15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.roundedPanel15.BorderRadius = 30;
             this.roundedPanel15.Controls.Add(this.label12);
@@ -408,6 +421,7 @@
             // 
             // roundedPanel11
             // 
+            this.roundedPanel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.roundedPanel11.BorderRadius = 30;
             this.roundedPanel11.Controls.Add(this.label10);
@@ -430,6 +444,7 @@
             // 
             // roundedPanel12
             // 
+            this.roundedPanel12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel12.BorderRadius = 30;
             this.roundedPanel12.Controls.Add(this.roundedPanel13);
@@ -440,6 +455,7 @@
             // 
             // roundedPanel13
             // 
+            this.roundedPanel13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.roundedPanel13.BorderRadius = 30;
             this.roundedPanel13.Controls.Add(this.label11);
@@ -462,6 +478,7 @@
             // 
             // roundedPanel10
             // 
+            this.roundedPanel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel10.BorderRadius = 30;
             this.roundedPanel10.Location = new System.Drawing.Point(33, 216);
@@ -471,6 +488,7 @@
             // 
             // roundedPanel8
             // 
+            this.roundedPanel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.roundedPanel8.BorderRadius = 30;
             this.roundedPanel8.Controls.Add(this.roundedPanel9);
@@ -481,6 +499,7 @@
             // 
             // roundedPanel9
             // 
+            this.roundedPanel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.roundedPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.roundedPanel9.BorderRadius = 30;
             this.roundedPanel9.Controls.Add(this.label9);
