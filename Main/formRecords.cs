@@ -103,5 +103,10 @@ namespace Main
         private void btnCourse_Click(object sender, EventArgs e)
         {
         }
+
+        private void btnExportAbsent_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -32,6 +32,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.dgvAttendance = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.roundedPanel4 = new RoundedPanel();
             this.roundedPanel1 = new RoundedPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
@@ -39,13 +40,12 @@
             this.lbName = new System.Windows.Forms.Label();
             this.roundedPanel2 = new RoundedPanel();
             this.roundedPanel3 = new RoundedPanel();
-            this.roundedPanel4 = new RoundedPanel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendance)).BeginInit();
             this.panel3.SuspendLayout();
+            this.roundedPanel4.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
-            this.roundedPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -99,6 +99,18 @@
             this.panel3.Size = new System.Drawing.Size(1162, 707);
             this.panel3.TabIndex = 23;
             // 
+            // roundedPanel4
+            // 
+            this.roundedPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
+            this.roundedPanel4.BorderRadius = 30;
+            this.roundedPanel4.Controls.Add(this.dgvAttendance);
+            this.roundedPanel4.Controls.Add(this.panel2);
+            this.roundedPanel4.Location = new System.Drawing.Point(383, 29);
+            this.roundedPanel4.Name = "roundedPanel4";
+            this.roundedPanel4.Size = new System.Drawing.Size(629, 377);
+            this.roundedPanel4.TabIndex = 5;
+            this.roundedPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel4_Paint);
+            // 
             // roundedPanel1
             // 
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
@@ -113,6 +125,7 @@
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(311, 585);
             this.roundedPanel1.TabIndex = 4;
+            this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
             // 
             // label1
             // 
@@ -143,6 +156,7 @@
             // 
             this.lbCourse.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbCourse.AutoSize = true;
+            this.lbCourse.BackColor = System.Drawing.Color.Transparent;
             this.lbCourse.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCourse.ForeColor = System.Drawing.Color.White;
             this.lbCourse.Location = new System.Drawing.Point(122, 463);
@@ -157,6 +171,8 @@
             // 
             this.lbName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbName.AutoSize = true;
+            this.lbName.BackColor = System.Drawing.Color.Transparent;
+            this.lbName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbName.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.White;
             this.lbName.Location = new System.Drawing.Point(93, 387);
@@ -184,17 +200,6 @@
             this.roundedPanel3.Size = new System.Drawing.Size(192, 39);
             this.roundedPanel3.TabIndex = 27;
             // 
-            // roundedPanel4
-            // 
-            this.roundedPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
-            this.roundedPanel4.BorderRadius = 30;
-            this.roundedPanel4.Controls.Add(this.dgvAttendance);
-            this.roundedPanel4.Controls.Add(this.panel2);
-            this.roundedPanel4.Location = new System.Drawing.Point(383, 29);
-            this.roundedPanel4.Name = "roundedPanel4";
-            this.roundedPanel4.Size = new System.Drawing.Size(629, 377);
-            this.roundedPanel4.TabIndex = 5;
-            // 
             // formLogged
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -209,10 +214,10 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendance)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.roundedPanel4.ResumeLayout(false);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).EndInit();
-            this.roundedPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

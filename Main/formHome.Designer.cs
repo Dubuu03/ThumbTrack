@@ -30,6 +30,8 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.roundedPanel18 = new RoundedPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.roundedPanel2 = new RoundedPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.roundedPanel5 = new RoundedPanel();
@@ -64,10 +66,9 @@
             this.roundedPanel9 = new RoundedPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.roundedPanel18 = new RoundedPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.roundedPanel18.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
@@ -84,7 +85,6 @@
             this.roundedPanel13.SuspendLayout();
             this.roundedPanel8.SuspendLayout();
             this.roundedPanel9.SuspendLayout();
-            this.roundedPanel18.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -107,6 +107,27 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1162, 707);
             this.panel8.TabIndex = 8;
+            // 
+            // roundedPanel18
+            // 
+            this.roundedPanel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
+            this.roundedPanel18.BorderRadius = 30;
+            this.roundedPanel18.Controls.Add(this.label1);
+            this.roundedPanel18.Location = new System.Drawing.Point(487, 556);
+            this.roundedPanel18.Name = "roundedPanel18";
+            this.roundedPanel18.Size = new System.Drawing.Size(539, 50);
+            this.roundedPanel18.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Qualy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(179, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Export Records";
             // 
             // roundedPanel2
             // 
@@ -357,11 +378,11 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(41, 5);
+            this.label13.Location = new System.Drawing.Point(48, 5);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(258, 20);
+            this.label13.Size = new System.Drawing.Size(242, 20);
             this.label13.TabIndex = 10;
-            this.label13.Text = "number of registered students";
+            this.label13.Text = "Bachelor in Multimedia Arts";
             // 
             // roundedPanel14
             // 
@@ -389,11 +410,11 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(41, 5);
+            this.label12.Location = new System.Drawing.Point(58, 5);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(258, 20);
+            this.label12.Size = new System.Drawing.Size(224, 20);
             this.label12.TabIndex = 10;
-            this.label12.Text = "number of registered students";
+            this.label12.Text = "B Library and Info Science";
             // 
             // roundedPanel11
             // 
@@ -411,11 +432,11 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(41, 5);
+            this.label10.Location = new System.Drawing.Point(75, 5);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(258, 20);
+            this.label10.Size = new System.Drawing.Size(192, 20);
             this.label10.TabIndex = 10;
-            this.label10.Text = "number of registered students";
+            this.label10.Text = "BS Information System";
             // 
             // roundedPanel12
             // 
@@ -443,11 +464,11 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(41, 5);
+            this.label11.Location = new System.Drawing.Point(50, 5);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(258, 20);
+            this.label11.Size = new System.Drawing.Size(239, 20);
             this.label11.TabIndex = 10;
-            this.label11.Text = "number of registered students";
+            this.label11.Text = "BS Information Technology";
             // 
             // roundedPanel10
             // 
@@ -484,11 +505,11 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(41, 5);
+            this.label9.Location = new System.Drawing.Point(82, 5);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(258, 20);
+            this.label9.Size = new System.Drawing.Size(177, 20);
             this.label9.TabIndex = 10;
-            this.label9.Text = "number of registered students";
+            this.label9.Text = "BS Computer Science";
             // 
             // label2
             // 
@@ -501,27 +522,6 @@
             this.label2.Size = new System.Drawing.Size(191, 34);
             this.label2.TabIndex = 0;
             this.label2.Text = "Total Login";
-            // 
-            // roundedPanel18
-            // 
-            this.roundedPanel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(166)))), ((int)(((byte)(55)))));
-            this.roundedPanel18.BorderRadius = 30;
-            this.roundedPanel18.Controls.Add(this.label1);
-            this.roundedPanel18.Location = new System.Drawing.Point(487, 556);
-            this.roundedPanel18.Name = "roundedPanel18";
-            this.roundedPanel18.Size = new System.Drawing.Size(539, 50);
-            this.roundedPanel18.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Qualy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(179, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Export Records";
             // 
             // formHome
             // 
@@ -536,6 +536,8 @@
             this.Load += new System.EventHandler(this.formHome_Load);
             this.panel1.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
+            this.roundedPanel18.ResumeLayout(false);
+            this.roundedPanel18.PerformLayout();
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel2.PerformLayout();
             this.roundedPanel5.ResumeLayout(false);
@@ -564,8 +566,6 @@
             this.roundedPanel8.ResumeLayout(false);
             this.roundedPanel9.ResumeLayout(false);
             this.roundedPanel9.PerformLayout();
-            this.roundedPanel18.ResumeLayout(false);
-            this.roundedPanel18.PerformLayout();
             this.ResumeLayout(false);
 
         }

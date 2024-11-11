@@ -114,5 +114,15 @@ namespace Main
         {
 
         }
+
+        private void roundedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void roundedPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
