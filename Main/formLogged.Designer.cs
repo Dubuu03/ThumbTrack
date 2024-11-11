@@ -77,7 +77,7 @@
             // 
             this.dgvAttendance.AllowUserToAddRows = false;
             this.dgvAttendance.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dgvAttendance.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvAttendance.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.dgvAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAttendance.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvAttendance.Location = new System.Drawing.Point(25, 82);
@@ -143,7 +143,7 @@
             // pictureBoxPhoto
             // 
             this.pictureBoxPhoto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxPhoto.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBoxPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.pictureBoxPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxPhoto.Location = new System.Drawing.Point(28, 97);
             this.pictureBoxPhoto.Name = "pictureBoxPhoto";

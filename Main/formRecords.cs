@@ -108,5 +108,20 @@ namespace Main
         {
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvAbsent_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtSearchAttendance_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -541,5 +541,15 @@ namespace Main
         {
             timer1.Start();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,7 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formRecords));
             this.dgvAttendance = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnExportAttendace = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtSearchAttendance = new System.Windows.Forms.TextBox();
             this.btnCourse = new System.Windows.Forms.Button();
             this.btnShow = new System.Windows.Forms.Button();
@@ -44,15 +46,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dgvAbsent = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendance)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAbsent)).BeginInit();
             this.panel5.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvAttendance
@@ -65,7 +65,7 @@
             this.dgvAttendance.Name = "dgvAttendance";
             this.dgvAttendance.ReadOnly = true;
             this.dgvAttendance.RowHeadersWidth = 51;
-            this.dgvAttendance.Size = new System.Drawing.Size(1129, 217);
+            this.dgvAttendance.Size = new System.Drawing.Size(997, 195);
             this.dgvAttendance.TabIndex = 2;
             // 
             // panel1
@@ -73,10 +73,25 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.dgvAttendance);
-            this.panel1.Location = new System.Drawing.Point(18, 108);
+            this.panel1.Location = new System.Drawing.Point(18, 96);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1129, 275);
+            this.panel1.Size = new System.Drawing.Size(997, 253);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btnExportAttendace);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.txtSearchAttendance);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(997, 58);
+            this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnExportAttendace
             // 
@@ -87,13 +102,25 @@
             this.btnExportAttendace.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportAttendace.ForeColor = System.Drawing.Color.White;
             this.btnExportAttendace.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExportAttendace.Location = new System.Drawing.Point(821, 13);
+            this.btnExportAttendace.Location = new System.Drawing.Point(839, 13);
             this.btnExportAttendace.Name = "btnExportAttendace";
             this.btnExportAttendace.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.btnExportAttendace.Size = new System.Drawing.Size(116, 29);
             this.btnExportAttendace.TabIndex = 9;
             this.btnExportAttendace.Text = "Search";
             this.btnExportAttendace.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(22, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(273, 34);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Attendance Data";
             // 
             // txtSearchAttendance
             // 
@@ -102,13 +129,14 @@
             this.txtSearchAttendance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearchAttendance.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchAttendance.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtSearchAttendance.Location = new System.Drawing.Point(510, 17);
+            this.txtSearchAttendance.Location = new System.Drawing.Point(528, 17);
             this.txtSearchAttendance.MaxLength = 255;
             this.txtSearchAttendance.Multiline = true;
             this.txtSearchAttendance.Name = "txtSearchAttendance";
             this.txtSearchAttendance.Size = new System.Drawing.Size(295, 23);
             this.txtSearchAttendance.TabIndex = 18;
             this.txtSearchAttendance.Text = "Search Student id";
+            this.txtSearchAttendance.TextChanged += new System.EventHandler(this.txtSearchAttendance_TextChanged_1);
             // 
             // btnCourse
             // 
@@ -188,9 +216,9 @@
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.dgvAbsent);
-            this.panel3.Location = new System.Drawing.Point(18, 414);
+            this.panel3.Location = new System.Drawing.Point(18, 364);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1129, 261);
+            this.panel3.Size = new System.Drawing.Size(997, 253);
             this.panel3.TabIndex = 4;
             // 
             // panel4
@@ -204,7 +232,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1129, 58);
+            this.panel4.Size = new System.Drawing.Size(997, 58);
             this.panel4.TabIndex = 3;
             // 
             // btnExportAbsent
@@ -216,7 +244,7 @@
             this.btnExportAbsent.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportAbsent.ForeColor = System.Drawing.Color.White;
             this.btnExportAbsent.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExportAbsent.Location = new System.Drawing.Point(821, 12);
+            this.btnExportAbsent.Location = new System.Drawing.Point(839, 12);
             this.btnExportAbsent.Name = "btnExportAbsent";
             this.btnExportAbsent.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.btnExportAbsent.Size = new System.Drawing.Size(116, 29);
@@ -232,7 +260,7 @@
             this.txtSearchAbsentees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearchAbsentees.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchAbsentees.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtSearchAbsentees.Location = new System.Drawing.Point(510, 15);
+            this.txtSearchAbsentees.Location = new System.Drawing.Point(528, 15);
             this.txtSearchAbsentees.MaxLength = 255;
             this.txtSearchAbsentees.Multiline = true;
             this.txtSearchAbsentees.Name = "txtSearchAbsentees";
@@ -246,7 +274,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(13, 10);
+            this.label4.Location = new System.Drawing.Point(23, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(198, 34);
             this.label4.TabIndex = 5;
@@ -262,8 +290,9 @@
             this.dgvAbsent.Name = "dgvAbsent";
             this.dgvAbsent.ReadOnly = true;
             this.dgvAbsent.RowHeadersWidth = 51;
-            this.dgvAbsent.Size = new System.Drawing.Size(1129, 203);
+            this.dgvAbsent.Size = new System.Drawing.Size(997, 195);
             this.dgvAbsent.TabIndex = 2;
+            this.dgvAbsent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAbsent_CellContentClick);
             // 
             // panel5
             // 
@@ -281,32 +310,6 @@
             this.panel5.Size = new System.Drawing.Size(1162, 707);
             this.panel5.TabIndex = 25;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Qualy", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(13, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 34);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Attendance Data";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.btnExportAttendace);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtSearchAttendance);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1129, 58);
-            this.panel2.TabIndex = 3;
-            // 
             // formRecords
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,13 +323,13 @@
             this.Load += new System.EventHandler(this.formRecords_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendance)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAbsent)).EndInit();
             this.panel5.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
