@@ -42,9 +42,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Qualy", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(365, 127);
+            this.label1.Location = new System.Drawing.Point(487, 156);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(441, 74);
+            this.label1.Size = new System.Drawing.Size(550, 92);
             this.label1.TabIndex = 5;
             this.label1.Text = "ATTENDANCE ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -57,9 +58,10 @@
             this.btnTimeOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimeOut.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimeOut.ForeColor = System.Drawing.Color.Red;
-            this.btnTimeOut.Location = new System.Drawing.Point(612, 393);
+            this.btnTimeOut.Location = new System.Drawing.Point(816, 484);
+            this.btnTimeOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTimeOut.Name = "btnTimeOut";
-            this.btnTimeOut.Size = new System.Drawing.Size(194, 53);
+            this.btnTimeOut.Size = new System.Drawing.Size(259, 65);
             this.btnTimeOut.TabIndex = 2;
             this.btnTimeOut.Text = "TIME OUT";
             this.btnTimeOut.UseVisualStyleBackColor = false;
@@ -73,9 +75,10 @@
             this.btnTimeIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimeIn.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimeIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.btnTimeIn.Location = new System.Drawing.Point(314, 393);
+            this.btnTimeIn.Location = new System.Drawing.Point(419, 484);
+            this.btnTimeIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTimeIn.Name = "btnTimeIn";
-            this.btnTimeIn.Size = new System.Drawing.Size(194, 53);
+            this.btnTimeIn.Size = new System.Drawing.Size(259, 65);
             this.btnTimeIn.TabIndex = 1;
             this.btnTimeIn.Text = "TIME IN";
             this.btnTimeIn.UseVisualStyleBackColor = false;
@@ -85,16 +88,15 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.panel1.BackgroundImage = global::Main.Properties.Resources.grs;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnTimeOut);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnTimeIn);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1162, 707);
+            this.panel1.Size = new System.Drawing.Size(1549, 870);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -104,22 +106,24 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Qualy", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(251, 201);
+            this.label2.Location = new System.Drawing.Point(335, 247);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(650, 74);
+            this.label2.Size = new System.Drawing.Size(813, 92);
             this.label2.TabIndex = 6;
             this.label2.Text = "monitoring system";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // formAttendance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1848, 970);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "formAttendance";
             this.Text = "formAttendance";
             this.panel1.ResumeLayout(false);

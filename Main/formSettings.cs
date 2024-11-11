@@ -17,6 +17,16 @@ namespace Main
             LoadTimePeriods();
             GetEventNameForToday();
 
+            RoundedPanel[] panels = { roundedPanel5, roundedPanel6, roundedPanel7, roundedPanel8, roundedPanel9 , roundedPanel10};
+
+            foreach (var panel in panels)
+            {
+                if (panel is RoundedPanel roundedPanel)
+                {
+                    roundedPanel.BorderRadius = 15; // Set to desired radius for each panel
+                }
+            }
+
             placeholders.Add(txtEventName, "Enter Event Name");
             placeholders.Add(txtAmInStart, "Time Start");
             placeholders.Add(txtAmInEnd, "Time End");
@@ -177,7 +187,7 @@ namespace Main
             }
         }
 
-        private void btnSubmitEvent_Click(object sender, EventArgs e)
+        private void btnSubmitEvent_Click_1(object sender, EventArgs e)
         {
             string eventName = txtEventName.Text.Trim();
             DateTime eventDate = DateTime.Now;
@@ -313,10 +323,12 @@ namespace Main
                 }
                 else if (placeholders[textBox] == "Enter Event Name")
                 {
-                    textBox.ForeColor = Color.Black; 
+                    textBox.ForeColor = Color.White; 
                 }
             }
         }
 
+
+    
     }
 }

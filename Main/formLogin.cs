@@ -7,9 +7,9 @@ namespace Main
 {
     public partial class formLogin : Form
     {
-        private bool dragging = false;
-        private Point dragCursorPoint; 
-        private Point dragFormPoint; 
+        //private bool dragging = false;
+        //private Point dragCursorPoint; 
+        //private Point dragFormPoint; 
 
         public formLogin()
         {

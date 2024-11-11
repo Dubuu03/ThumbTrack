@@ -28,8 +28,6 @@ namespace Main
         public string Section { get; set; }
         public string Password { get; set; }
         public int Year { get; set; }
-
-        private DPFP.Template Template;
         public string name;
 
         public formRegister()
@@ -144,7 +142,7 @@ namespace Main
                     MakeReport("The fingerprint feature set was created");
                     Enroller.AddFeatures(features); // Add features to Enroller
                 }
-                catch (DPFP.Error.SDKException ex)
+                catch (DPFP.Error.SDKException)
                 {
                     // Show message box on failure and reset enrollment
                     this.Invoke((MethodInvoker)delegate
