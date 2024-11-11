@@ -16,8 +16,16 @@ namespace Main
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
-           // Application.Run(new formLogin());
+            Main mainForm = new Main();
+            mainForm.WindowState = FormWindowState.Maximized; 
+            mainForm.FormBorderStyle = FormBorderStyle.Sizable; 
+            mainForm.StartPosition = FormStartPosition.CenterScreen;
+            mainForm.MaximizeBox = false;
+            Application.Run(mainForm);
+
+
+
+            // Application.Run(new formLogin());
         }
     }
 }
