@@ -8,6 +8,16 @@ namespace Main
         public formHome()
         {
             InitializeComponent();
+
+            RoundedPanel[] panels = { roundedPanel9, roundedPanel11, roundedPanel13, roundedPanel15, roundedPanel17 };
+
+            foreach (var panel in panels)
+            {
+                if (panel is RoundedPanel roundedPanel)
+                {
+                    roundedPanel.BorderRadius = 10; // Set to desired radius for each panel
+                }
+            }
         }
 
         private void formHome_Load(object sender, EventArgs e)
