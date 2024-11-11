@@ -159,8 +159,8 @@
             this.txtSearchAttendance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.txtSearchAttendance.Font = new System.Drawing.Font("Qualy", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchAttendance.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtSearchAttendance.Location = new System.Drawing.Point(56, 100);
-            this.txtSearchAttendance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearchAttendance.Location = new System.Drawing.Point(262, 96);
+            this.txtSearchAttendance.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchAttendance.MaxLength = 255;
             this.txtSearchAttendance.Name = "txtSearchAttendance";
             this.txtSearchAttendance.Size = new System.Drawing.Size(601, 42);
