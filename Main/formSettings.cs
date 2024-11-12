@@ -98,7 +98,7 @@ namespace Main
         private void btnSubmitEvent_Click_1(object sender, EventArgs e)
         {
             string eventName = txtEventName.Text.Trim();
-            if (!string.IsNullOrEmpty(eventName))
+            if (!string.IsNullOrEmpty(eventName) && txtEventName.Text != placeholders[txtEventName])
             {
                 SaveEvent(eventName);
             }

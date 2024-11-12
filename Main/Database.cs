@@ -339,6 +339,19 @@ namespace Main
                 }
             }
         }
+        public bool DeleteStudent(int studentID)
+        {
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                string query = "DELETE FROM tblstudents WHERE StudentID = @StudentID";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@StudentID", studentID);
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
 
 
         public string GetOldPassword(int studentID)

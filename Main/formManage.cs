@@ -234,7 +234,7 @@ namespace Main
             txtPassword.Enabled = !txtPassword.Enabled;
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnUpdate_Click_1(object sender, EventArgs e)
         {
             if (!ValidateInput()) return;
 
@@ -362,7 +362,7 @@ namespace Main
             btnClear.Enabled = false;
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void btnClear_Click_1(object sender, EventArgs e)
         {
             //tbStudentID.Clear();
             txtName.Clear();
@@ -396,8 +396,31 @@ namespace Main
                 textBox.ForeColor = Color.White; // Regular text color
             }
         }
- 
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int studentID;
+            if (int.TryParse(tbStudentID.Text, out studentID))
+            {
+                Database db = new Database();
+                bool isDeleted = db.DeleteStudent(studentID);
+
+                if (isDeleted)
+                {
+                    MessageBox.Show("Student record deleted successfully.");
+                    ResetForm();
+
+                }
+                else
+                {
+                    MessageBox.Show("Failed to delete the student record. Please check the Student ID.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid Student ID. Please enter a valid ID.");
+            }
+        }
 
     }
 }
