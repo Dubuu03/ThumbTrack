@@ -301,19 +301,6 @@ namespace Main
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void btnRegister_Click(object sender, EventArgs e)
         {
             int studentID;
@@ -389,6 +376,18 @@ namespace Main
             txtSection.Clear();
             txtPassword.Clear();
             pictureBoxPhoto.Image = Image.FromFile(defaultImagePath);
+
+            if (isScannerRunning)
+            {
+                if (fImage.Image != null)
+                {
+                    fImage.Image = null;
+                }
+
+                ResetEnrollment();
+                statusText.Text = string.Empty;
+                Prompt.Text= "Using the fingerprint reader, scan your fingerprint.";
+            }
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
