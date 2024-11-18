@@ -83,8 +83,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvAttendance.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvAttendance.Location = new System.Drawing.Point(0, 73);
-            this.dgvAttendance.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvAttendance.Location = new System.Drawing.Point(0, 59);
             this.dgvAttendance.Name = "dgvAttendance";
             this.dgvAttendance.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -96,7 +95,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvAttendance.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvAttendance.RowHeadersWidth = 51;
-            this.dgvAttendance.Size = new System.Drawing.Size(1443, 276);
+            this.dgvAttendance.Size = new System.Drawing.Size(1082, 224);
             this.dgvAttendance.TabIndex = 2;
             // 
             // panel1
@@ -104,10 +103,9 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.dgvAttendance);
-            this.panel1.Location = new System.Drawing.Point(53, 165);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(40, 134);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1443, 348);
+            this.panel1.Size = new System.Drawing.Size(1082, 283);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -120,9 +118,8 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtSearchAttendance);
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1442, 71);
+            this.panel2.Size = new System.Drawing.Size(1082, 58);
             this.panel2.TabIndex = 3;
             // 
             // btnExportAttendace
@@ -134,11 +131,10 @@
             this.btnExportAttendace.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportAttendace.ForeColor = System.Drawing.Color.White;
             this.btnExportAttendace.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExportAttendace.Location = new System.Drawing.Point(1244, 16);
-            this.btnExportAttendace.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExportAttendace.Location = new System.Drawing.Point(933, 13);
             this.btnExportAttendace.Name = "btnExportAttendace";
-            this.btnExportAttendace.Padding = new System.Windows.Forms.Padding(16, 0, 16, 0);
-            this.btnExportAttendace.Size = new System.Drawing.Size(155, 36);
+            this.btnExportAttendace.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.btnExportAttendace.Size = new System.Drawing.Size(116, 29);
             this.btnExportAttendace.TabIndex = 9;
             this.btnExportAttendace.Text = "EXPORT";
             this.btnExportAttendace.UseVisualStyleBackColor = false;
@@ -152,10 +148,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(26, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(20, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(390, 43);
+            this.label1.Size = new System.Drawing.Size(309, 34);
             this.label1.TabIndex = 5;
             this.label1.Text = "    Attendance Data";
             // 
@@ -166,12 +161,11 @@
             this.txtSearchAttendance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearchAttendance.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchAttendance.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtSearchAttendance.Location = new System.Drawing.Point(829, 21);
-            this.txtSearchAttendance.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearchAttendance.Location = new System.Drawing.Point(622, 17);
             this.txtSearchAttendance.MaxLength = 255;
             this.txtSearchAttendance.Multiline = true;
             this.txtSearchAttendance.Name = "txtSearchAttendance";
-            this.txtSearchAttendance.Size = new System.Drawing.Size(393, 28);
+            this.txtSearchAttendance.Size = new System.Drawing.Size(295, 23);
             this.txtSearchAttendance.TabIndex = 18;
             this.txtSearchAttendance.Text = "Search Student id";
             // 
@@ -184,11 +178,10 @@
             this.btnCourse.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCourse.ForeColor = System.Drawing.Color.White;
             this.btnCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCourse.Location = new System.Drawing.Point(1000, 97);
-            this.btnCourse.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCourse.Location = new System.Drawing.Point(750, 79);
             this.btnCourse.Name = "btnCourse";
-            this.btnCourse.Padding = new System.Windows.Forms.Padding(16, 0, 16, 0);
-            this.btnCourse.Size = new System.Drawing.Size(244, 47);
+            this.btnCourse.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.btnCourse.Size = new System.Drawing.Size(183, 38);
             this.btnCourse.TabIndex = 5;
             this.btnCourse.Text = "Course";
             this.btnCourse.UseVisualStyleBackColor = false;
@@ -203,11 +196,10 @@
             this.btnShow.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShow.ForeColor = System.Drawing.Color.White;
             this.btnShow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnShow.Location = new System.Drawing.Point(1264, 97);
-            this.btnShow.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShow.Location = new System.Drawing.Point(948, 79);
             this.btnShow.Name = "btnShow";
-            this.btnShow.Padding = new System.Windows.Forms.Padding(16, 0, 16, 0);
-            this.btnShow.Size = new System.Drawing.Size(192, 47);
+            this.btnShow.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.btnShow.Size = new System.Drawing.Size(144, 38);
             this.btnShow.TabIndex = 6;
             this.btnShow.Text = "SHOW";
             this.btnShow.UseVisualStyleBackColor = false;
@@ -222,11 +214,10 @@
             this.btnStart.ForeColor = System.Drawing.Color.White;
             this.btnStart.Image = ((System.Drawing.Image)(resources.GetObject("btnStart.Image")));
             this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnStart.Location = new System.Drawing.Point(739, 97);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStart.Location = new System.Drawing.Point(554, 79);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Padding = new System.Windows.Forms.Padding(16, 0, 16, 0);
-            this.btnStart.Size = new System.Drawing.Size(244, 47);
+            this.btnStart.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.btnStart.Size = new System.Drawing.Size(183, 38);
             this.btnStart.TabIndex = 7;
             this.btnStart.Text = "mm/dd/yyyy";
             this.btnStart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -242,11 +233,10 @@
             this.btnStartDate.ForeColor = System.Drawing.Color.White;
             this.btnStartDate.Image = ((System.Drawing.Image)(resources.GetObject("btnStartDate.Image")));
             this.btnStartDate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnStartDate.Location = new System.Drawing.Point(477, 97);
-            this.btnStartDate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStartDate.Location = new System.Drawing.Point(358, 79);
             this.btnStartDate.Name = "btnStartDate";
-            this.btnStartDate.Padding = new System.Windows.Forms.Padding(16, 0, 16, 0);
-            this.btnStartDate.Size = new System.Drawing.Size(244, 47);
+            this.btnStartDate.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.btnStartDate.Size = new System.Drawing.Size(183, 38);
             this.btnStartDate.TabIndex = 8;
             this.btnStartDate.Text = "mm/dd/yyyy";
             this.btnStartDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -257,10 +247,9 @@
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.dgvAbsent);
-            this.panel3.Location = new System.Drawing.Point(53, 533);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(40, 433);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1443, 325);
+            this.panel3.Size = new System.Drawing.Size(1082, 264);
             this.panel3.TabIndex = 4;
             // 
             // panel4
@@ -273,9 +262,8 @@
             this.panel4.Controls.Add(this.txtSearchAbsentees);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1442, 71);
+            this.panel4.Size = new System.Drawing.Size(1082, 58);
             this.panel4.TabIndex = 3;
             // 
             // btnExportAbsent
@@ -287,11 +275,10 @@
             this.btnExportAbsent.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportAbsent.ForeColor = System.Drawing.Color.White;
             this.btnExportAbsent.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExportAbsent.Location = new System.Drawing.Point(1244, 18);
-            this.btnExportAbsent.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExportAbsent.Location = new System.Drawing.Point(933, 15);
             this.btnExportAbsent.Name = "btnExportAbsent";
-            this.btnExportAbsent.Padding = new System.Windows.Forms.Padding(16, 0, 16, 0);
-            this.btnExportAbsent.Size = new System.Drawing.Size(155, 36);
+            this.btnExportAbsent.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.btnExportAbsent.Size = new System.Drawing.Size(116, 29);
             this.btnExportAbsent.TabIndex = 19;
             this.btnExportAbsent.Text = "EXPORT";
             this.btnExportAbsent.UseVisualStyleBackColor = false;
@@ -304,12 +291,11 @@
             this.txtSearchAbsentees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearchAbsentees.Font = new System.Drawing.Font("Qualy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchAbsentees.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtSearchAbsentees.Location = new System.Drawing.Point(829, 22);
-            this.txtSearchAbsentees.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearchAbsentees.Location = new System.Drawing.Point(622, 18);
             this.txtSearchAbsentees.MaxLength = 255;
             this.txtSearchAbsentees.Multiline = true;
             this.txtSearchAbsentees.Name = "txtSearchAbsentees";
-            this.txtSearchAbsentees.Size = new System.Drawing.Size(393, 28);
+            this.txtSearchAbsentees.Size = new System.Drawing.Size(295, 23);
             this.txtSearchAbsentees.TabIndex = 19;
             this.txtSearchAbsentees.Text = "Search Student id";
             // 
@@ -321,10 +307,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
             this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Location = new System.Drawing.Point(26, 18);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(20, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(294, 43);
+            this.label4.Size = new System.Drawing.Size(234, 34);
             this.label4.TabIndex = 5;
             this.label4.Text = "    Absent Data";
             // 
@@ -350,8 +335,7 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvAbsent.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvAbsent.Location = new System.Drawing.Point(0, 73);
-            this.dgvAbsent.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvAbsent.Location = new System.Drawing.Point(0, 59);
             this.dgvAbsent.Name = "dgvAbsent";
             this.dgvAbsent.ReadOnly = true;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -363,7 +347,7 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvAbsent.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvAbsent.RowHeadersWidth = 51;
-            this.dgvAbsent.Size = new System.Drawing.Size(1443, 252);
+            this.dgvAbsent.Size = new System.Drawing.Size(1082, 205);
             this.dgvAbsent.TabIndex = 2;
             // 
             // panel5
@@ -378,20 +362,19 @@
             this.panel5.Controls.Add(this.btnShow);
             this.panel5.Controls.Add(this.btnCourse);
             this.panel5.Location = new System.Drawing.Point(-1, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1549, 870);
+            this.panel5.Size = new System.Drawing.Size(1162, 707);
             this.panel5.TabIndex = 25;
             // 
             // formRecords
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1848, 970);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formRecords";
             this.Text = "formRecords";
             this.Load += new System.EventHandler(this.formRecords_Load);
